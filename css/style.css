@@ -345,7 +345,7 @@ a {
 @media (min-width: 700px) {
     .sombra {
        display: block;
-       height: 340px; 
+       height: 330px; 
     }
 }
 
@@ -367,6 +367,6 @@ a {
   .caixa {
     background: none;
     width: 400px;
-    height: 400px;
+    height: 300px;
     color: black;
   }
