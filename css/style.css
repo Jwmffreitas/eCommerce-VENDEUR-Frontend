@@ -105,7 +105,7 @@ a {
 
 @media(min-width: 1000px) and (max-width: 1200px) {
     .imagem img {
-        width: 100px;
+        width: 160px;
     }
 }
 
@@ -213,6 +213,15 @@ a {
       display: none;
   }
 
+  .screen {
+    width: 100%;
+    text-align: center;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
   @media (min-width: 700px) {
     .desc {
         display: inline;
@@ -248,6 +257,33 @@ a {
         justify-content: center;
         align-items: center;
         padding: 10px;
+    }
+}
+
+@media (min-width: 700px) and (max-width: 1099px) {
+    .screen {
+        width: 100%;
+        text-align: center;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+    }
+}
+
+@media (min-width: 700px) and (max-width: 1099px) {
+    .screen img {
+        position: relative;
+        left: 130px;
+        border-radius: 10px;
+    }
+}
+
+@media (min-width: 0px) and (max-width: 700px) {
+    .screen img {
+        position: relative;
+        left: 65px;
+        border-radius: 10px;
     }
 }
 
@@ -308,7 +344,8 @@ a {
 
 @media (min-width: 700px) {
     .sombra {
-       display: block; 
+       display: block;
+       height: 340px; 
     }
 }
 
