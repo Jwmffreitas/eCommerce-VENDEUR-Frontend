@@ -4,9 +4,12 @@
     box-sizing: border-box;
 }
 
+body {
+    background-color: black;
+}
+
 
 header {
-    background-color: black;
     color: white;
     z-index: 1002;
     position: relative;
@@ -34,100 +37,9 @@ header {
     position: fixed;
 }
 
-.produto {
-    top: 18vh;
-    width: 0;
-    height: 50%;
-    display: none;
-    background: rgba(0,0,0,1);
-    z-index: 1001;
-    position: absolute;
-}
-
 img {
     width: 50px;
     margin: 5px;
-}
-
-a {
-    margin-top: 10px;
-    float: right;
-}
-
-.catalogo {
-    text-align: center;
-}
-
-@media(min-width: 850px){
-    .geral {
-        margin: 10px;
-    }
-}
-
-@media(min-width: 0px) and (max-width: 850px){
-    .geral {
-        margin-bottom: 20px;
-    }
-}
-
-.geral {
-  /*  border-style: solid; */
-  transform: scale(1);
-  transition: 500ms;
-  background-color: white;
-}
-
-@media(min-width:0px) and (max-width: 500px) {
-    .geral {
-        width: 300px;
-    }
-}
-
-.geral:hover {
-    transform: scale(1.1);
-    transition: 500ms;
-}
-
-.imagem {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.imagem img {
-    width: 200px;
-    position: relative;
-    top: 20px;
-    z-index: -10;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-}
-
-@media(min-width: 1000px) and (max-width: 1200px) {
-    .imagem img {
-        width: 160px;
-    }
-}
-
-.preco {
-    background-color:rgb(77, 77, 77);
-    color: white;
-    text-align: center;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-}
-
-@media(min-width: 1000px) {
-    .linha {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-}
-
-
-.linha h1 {
-    font-size: 18px;
 }
 
 @media(min-width: 799px) {
@@ -142,231 +54,44 @@ a {
     }
 }
 
-.sidebar {
-    height: 0;
-    width: 100%;
-    position: absolute;
-    z-index: 1001;
-    top: 81px;
-    right: 0;
-    background-color: black;
-    overflow-x: hidden;
-    transition: 0.5s;
-    padding-top: 0px;
-    padding-bottom: 10px;
-    display: none;
-    align-content: center;
-    justify-items: center;
-    box-shadow: white 0px 5px 3px;
-  }
-  
-  .sidebar a {
-    text-decoration: none;
-    font-size: 25px;
-    color: white;
-    display: block;
-    transition: 0.3s;
-  }
-  
-  .sidebar a:hover {
-    color: #f1f1f1;
-  }
-  
-  .sidebar .closebtn {
-    position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 36px;
-    margin-left: 50px;
-  }
-  
-  .openbtn {
-    font-size: 20px;
-    cursor: pointer;
-    background-color: #111;
-    color: white;
-    padding: 10px 15px;
-    border: none;
-  }
-  
-  .openbtn:hover {
-    background-color: #444;
-  }
-  
-  #main {
-    transition: 5s;
-    padding: 16px;
-  }
-
-  /* OUTRA PÁGINA!!!!!!!!!!!!!! */
-
-  .tela {
-      text-align: center;
-      display: grid;
-      justify-content: center;
-      align-items: center;
-      margin: 0px;
-      padding: 10px;
-  }
-
-  .desc {
-      display: none;
-  }
-
-  .screen {
-    width: 100%;
-    text-align: center;
+.destaque {
+    position: relative;
+    left: 0px;
     display: grid;
     justify-content: center;
     align-items: center;
-    padding: 10px;
-}
-
-  @media (min-width: 700px) {
-    .desc {
-        display: inline;
-        text-align: center;
-    }
-}
-
-@media (min-width: 700px) {
-    .tela {
-        width: 100%;
-        text-align: center;
-        display: grid;
-        justify-content: center;
-        align-items: center;
-        padding: 10px;
-    }
-}
-
-@media (min-width: 1100px) {
-    .tela {
-        width: 800px;
-        text-align: center;
-        display: block;
-        padding: 10px;
-    }
-}
-
-@media (min-width: 1100px) {
-    .screen {
-        width: 100%;
-        text-align: center;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 10px;
-    }
-}
-
-@media (min-width: 700px) and (max-width: 1099px) {
-    .screen {
-        width: 100%;
-        text-align: center;
-        display: grid;
-        justify-content: center;
-        align-items: center;
-        padding: 10px;
-    }
-}
-
-@media (min-width: 700px) and (max-width: 1099px) {
-    .screen img {
-        position: relative;
-        left: 130px;
-        border-radius: 10px;
-    }
-}
-
-@media (min-width: 0px) and (max-width: 700px) {
-    .screen img {
-        position: relative;
-        left: 65px;
-        border-radius: 10px;
-    }
-}
-
-.screen img {
-    width: 200px;    
-}
-
-
-@media (min-width: 1100px) {
-    .screen img {
-        width: 250px;
-        border-radius: 10px;
-    }
-}
-
-
-@media (min-width: 1100px) {
-    .caixa {
-        display: contents;
-    }
-}
-
-@media (min-width: 1100px) {
-    .caixa p {
-        width: 30em;
-        margin: 10px;
-        position: relative;
-        left: 0%;
-        top: 0px;
-        text-align: left;
-    }
-}
-
-@media (min-width: 1100px) {
-    .caixa h3 {
-        position: relative;
-        left: 0%;
-        text-align: left;
-    }
-}
-
-@media (min-width: 1100px) {
-    .caixa h5 {
-        font-size: 40px;
-        position: relative;
-        left: 220px;
-    }
-}
-
-@media (min-width: 1100px) {
-    .caixa button {
-        width: 220px;
-        position: relative;
-        top: 0px;
-        left: 65%;
-    }
-}
-
-@media (min-width: 700px) {
-    .sombra {
-       display: block;
-       height: 330px; 
-    }
-}
-
-@media (min-width: 700px) {
-    .botoes {
-        display: grid;
-    }
-}
-
-  @media(min-width: 800px) {
-    .sombra {
-        margin: 10px;
-        padding: 5px;
-        border-radius: 20px;
-        box-shadow: gray 0px 0px 5px;
-    }
-  }
-
-  .caixa {
-    background: none;
-    width: 400px;
+    background-color: white;
+    border-top-left-radius: 80%;
     height: 300px;
-    color: black;
-  }
+}
+
+.recomendado {
+    position: relative;
+    top: -1px;
+    background-color: white;
+    height: 100vh;
+}
+
+.rodape {
+    position: fixed;
+    width: 100%;
+    bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu {
+    font-size: 25px;
+    border-radius: 20px;
+    text-align: center;
+    background-color: white;
+    box-shadow: gray 0px 0px 15px;
+    width: 270px;
+}
+
+.menu i {
+    padding: 10px;
+    margin: 5px;
+    border-radius: 100%;
+}
