@@ -65,6 +65,15 @@ img {
     height: 300px;
 }
 
+.box-destaque {
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: center;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: gray 0px 0px 5px;
+}
+
 .recomendado {
     position: relative;
     top: -1px;
