@@ -124,3 +124,12 @@ img {
     margin: 5px;
     border-radius: 100%;
 }
+
+#qntdd {
+    position: relative;
+    bottom: 20px;
+    color: black;
+    transition: 1s;
+    font-size: 15px;
+    display: none;
+}
