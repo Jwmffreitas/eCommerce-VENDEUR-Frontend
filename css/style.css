@@ -79,14 +79,12 @@ img {
     text-align: center;
     position: relative;
     background-color: white;
-    height: 100%;
 }
 
 .produto {
-    display: block;
+    display: flex;
     justify-content: left;
     align-items: left;
-    height: 150px;
     text-align: left;
 }
 
@@ -98,7 +96,7 @@ img {
     align-items: center;
     border-radius: 10px;
     margin-left: 10px;
-    margin-right: 50px;
+    margin-right: 10px;
     box-shadow: gray 0px 6px 10px;
     height: 120px;
 }
