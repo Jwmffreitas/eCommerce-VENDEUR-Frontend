@@ -6,6 +6,7 @@
 
 body {
     background-color: black;
+    height: 100%;
 }
 
 
@@ -75,10 +76,31 @@ img {
 }
 
 .recomendado {
+    text-align: center;
     position: relative;
-    top: -1px;
     background-color: white;
-    height: 100vh;
+    height: 100%;
+}
+
+.produto {
+    display: block;
+    justify-content: left;
+    align-items: left;
+    height: 150px;
+    text-align: left;
+}
+
+.caixa-produto {
+    background-color: #e9d7ad;
+    width: 100px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    margin-left: 10px;
+    margin-right: 50px;
+    box-shadow: gray 0px 6px 10px;
+    height: 120px;
 }
 
 .rodape {
