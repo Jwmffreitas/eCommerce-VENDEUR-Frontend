@@ -88,6 +88,13 @@ img {
     text-align: left;
 }
 
+.produto p {
+    width: 150px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
 .caixa-produto {
     background-color: #e9d7ad;
     width: 100px;
