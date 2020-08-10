@@ -2,10 +2,11 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    text-decoration: none;
 }
 
 body {
-    background-color: black;
+    background-color: white;
     height: 100%;
 }
 
@@ -15,17 +16,6 @@ header {
     z-index: 1002;
     position: absolute;
     top: 0;
-}
-
-.vendeur {
-    display: none;
-    font-family: Helvetica;
-}
-
-@media(min-width: 500px) {
-    .vendeur {
-        display: inline;
-    }
 }
 
 .modal {
@@ -59,24 +49,62 @@ img {
     display: grid;
     justify-content: center;
     align-items: center;
-    background-color: #e9d7ad;
-    padding: 10px;
     width: 100vw;
     text-align: center;
 }
 
+.prod {
+    background-image: linear-gradient(to bottom, #e9d7ad, white);
+    height: 200px;
+    margin-bottom: -45px;
+}
+
 .prod img {
     width: 150px;
-    margin-top: 40px;
+    margin-top: 30px;
 }
 
 .desc {
+    position: relative;
+    margin-bottom: 0;
     background-color: white;
-    box-shadow: gray 0px 0px 3px;
+    box-shadow: rgb(184, 184, 184) 0px 0px 5px;
     padding: 10px;
     border-top-left-radius: 50px;
     border-top-right-radius: 50px;
     width: 100vw;
+    text-align: left;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: -2px;
+}
+
+.desc-prec {
+    margin-top: 10px;
+    display: flex;
+}
+
+.recomendado {
+    position: relative;
+    background-color: white;
+    margin-bottom: -2px;
+}
+
+.recomendado img {
+    width: 100px;
+}
+
+.carrosel {
+    width: 100vw;
+    display: flex;
+    overflow-x: scroll;
+}
+
+.carrosel h5 {
+    width: 118px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .rodape {
