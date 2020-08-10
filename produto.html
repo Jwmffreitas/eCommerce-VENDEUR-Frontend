@@ -3,126 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>VENDEUR eCommerce</title>
-    <link rel="stylesheet" href="css/style.css">
+    <title>Produto</title>
+    <link rel="stylesheet" href="css/style-produto.css">
     <script src="JS/script.js"></script>
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <script src="https://kit.fontawesome.com/35cfca1e90.js" crossorigin="anonymous"></script>
 </head>
-<body>   
+<body>
+
     <header>
+        <img src="img/logomaior-134x128.png">
+    </header>
+    <!-- <header>
         <table width="100%" id="menu">
             <tr>
                 <td align="left" style="width: 20%;">
-                    <img src="img/logomaior-134x128.png" style="margin-left: 10px;"> <span class="vendeur">VENDEUR</span>
+                    <img src="img/logomaior-134x128.png"> <span class="vendeur" style="margin-left: 10px;">VENDEUR</span>
                 </td>
-                <td align="center" style="font-size: 30px; width: 60%; font-family: Helvetica;">
+                <td align="center" style="font-size: 20px; width: 60%; font-family: Helvetica;">
                     JOALHERIA VENDEUR
-                </td>
-                <td align="right" id="botao" style="width: 20%;">
-                    <a href="#" class="w3-bar-item w3-button" style="font-family: Helvetica; font-size: 18px; height: 40px;">Minha Conta</a>
-                    <a href="#" class="w3-bar-item w3-button" style="font-family: Helvetica; font-size: 18px; height: 40px;">Carrinho</a>
-                </td>
-
-                <td>
-                    <div id="main">
-                        <button id="menu-button" class="menu-botao" onclick="openMenu()" style="width: 50px; background: none; border: 0; color: white; font-size: 30px;">☰</button>  
-                    </div>
                 </td>
             </tr>
         </table>
-        <div id="mySidebar" class="sidebar">
-            <a href="#">Carrinho</a>
-            <a href="#">Minha Conta</a>
-          </div>
-    </header>
-    <div class="modal" id="modal"> </div>
-    <div class="screen">
-        <img src="img/logo4.png" alt="">
-        <section class="tela w3-mobile">
-            <div class="sombra">
-                        <div class="w3-container w3-mobile container" style="padding: 10px;">
-                            <h4>#019385FBKS</h4>
+    </header> -->
 
-                            <div class="caixa w3-mobile">
-                                <div class="w3-col w3-center w3-mobile carta">
-                                    <h3>ALIANCA OA COM FIO OB 2 BRIL</h3>
-                                    <p>Aliança é um anel usado para simbolizar um compromisso e a união afetiva entre duas pessoas que se amam totalmente e verdadeiramente, simbolo do romance.</p>
-                                    <h5>R$ 4.250,00</h5>
-          
-                                    <div class="w3-section w3-mobile botoes">
-                                        <button class="w3-button w3-black" style="border-radius: 15px; outline: 0;">Adicionar ao Carrinho</button>
-                                    </div>
-                                </div>
-          
-                            </div>
-                        </div>
-            </div>
-        </section>
-    </div>
-    <section class="iguais" style="text-align: center; margin: 15px;">
-        <h1 style="margin-bottom: 20px; margin-top: 30px;">PRODUTOS SEMELHANTES</h1>
-        <div class="linha li1">
-            <div class="w3-col s2 m4 l2 geral w3-mobile" style="padding: 5px;">
-                <div class="imagem">
-                    <a href="produto.html"> <img src="img/logo4.png"> </a>
-                 </div>
-                <div class="w3-container" style="box-shadow: gray 0px 0px 5px; border-radius: 10px; background-color: white; padding: 5px;">
-                <h1>#019385FBKS</h1>
-                    <p>ALIANCA OA COM FIO OB 2 BRIL</p>
-                    <div class="preco">
-                        <p>R$ 4.250,00</p>
-                    </div>
-                </div> 
-            </div>
-            <div class="w3-col s2 m4 l2 geral w3-mobile" style="padding: 5px;">
-                <div class="imagem">
-                    <a href="produto.html"> <img src="img/logo4.png"> </a>
-                 </div>
-                <div class="w3-container" style="box-shadow: gray 0px 0px 5px; border-radius: 10px; background-color: white; padding: 5px;">
-                <h1>#019385FBKS</h1>
-                    <p>ALIANCA OA COM FIO OB 2 BRIL</p>
-                    <div class="preco">
-                        <p>R$ 4.250,00</p>
-                    </div>
-                </div> 
-            </div>
-            <div class="w3-col s2 m4 l2 geral w3-mobile" style="padding: 5px;">
-                <div class="imagem">
-                    <a href="produto.html"> <img src="img/logo4.png"> </a>
-                 </div>
-                <div class="w3-container" style="box-shadow: gray 0px 0px 5px; border-radius: 10px; background-color: white; padding: 5px;">
-                <h1>#019385FBKS</h1>
-                    <p>ALIANCA OA COM FIO OB 2 BRIL</p>
-                    <div class="preco">
-                        <p>R$ 4.250,00</p>
-                    </div>
-                </div> 
-            </div>
-            <div class="w3-col s2 m4 l2 geral w3-mobile" style="padding: 5px;">
-                <div class="imagem">
-                    <a href="produto.html"> <img src="img/logo4.png"> </a>
-                 </div>
-                <div class="w3-container" style="box-shadow: gray 0px 0px 5px; border-radius: 10px; background-color: white; padding: 5px;">
-                <h1>#019385FBKS</h1>
-                    <p>ALIANCA OA COM FIO OB 2 BRIL</p>
-                    <div class="preco">
-                        <p>R$ 4.250,00</p>
-                    </div>
-                </div> 
-            </div>
-            <div class="w3-col s2 m4 l2 geral w3-mobile" style="padding: 5px;">
-                <div class="imagem">
-                    <a href="produto.html"> <img src="img/logo4.png"> </a>
-                 </div>
-                <div class="w3-container" style="box-shadow: gray 0px 0px 5px; border-radius: 10px; background-color: white; padding: 5px;">
-                <h1>#019385FBKS</h1>
-                    <p>ALIANCA OA COM FIO OB 2 BRIL</p>
-                    <div class="preco">
-                        <p>R$ 4.250,00</p>
-                    </div>
-                </div> 
-            </div>
+    <section class="produto">
+        <div class="prod">
+            <img src="img/alianca.png" alt="">
+        </div>
+        <div class="desc">
+            <h5>ALIANCA OA COM FIO OB 2 BRIL</h5>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, aspernatur nam maiores expedita cumque, voluptatem eligendi magni recusandae quae illum harum minus sed. Ipsa, illum! Cupiditate aliquid a maxime rem?</p>
+            <button class="w3-button w3-black" style="border-radius: 10px;" onclick="addItem()">Add to cart</button>
         </div>
     </section>
+    
+    <div class="rodape">
+        <div class="menu">
+            <i class="fas fa-home"></i>
+            <i class="fas fa-shopping-cart"><span id="qntdd">0</span></i>
+            <i class="fas fa-heart"></i>
+            <i class="fas fa-user-circle"></i>
+        </div>
+    </div>
 </body>
 </html>
