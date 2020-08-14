@@ -114,6 +114,39 @@ img {
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: 1s;
+    z-index: 20000;
+}
+
+#pesquisa {
+    font-size: 18px;
+    width: 270px;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    text-align: center;
+    background-color: white;
+    padding: 5px;
+    box-shadow: gray 0px 0px 0px;
+    position: fixed;
+    bottom: 30px;
+    transition: 1s;
+}
+
+#busca {
+    position: fixed;
+    width: 100%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    transition: 1s;
+}
+
+#busca input {
+    border-radius: 10px;
+    text-decoration: none;
+    border: solid gray 1px;
+    width: 200px;
+    margin-bottom: 15px;
 }
 
 .menu {

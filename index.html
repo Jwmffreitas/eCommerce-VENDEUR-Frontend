@@ -10,7 +10,7 @@
     <script src="https://kit.fontawesome.com/35cfca1e90.js" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
-<body onload="aparecer()">   
+<body>   
     <header>
         <table width="100%" id="menu">
             <tr>
@@ -33,7 +33,7 @@
         </div>
     </section>
     <section style="height: 100%; margin-bottom: -10px;">
-        <div class="recomendado">
+        <div class="recomendado" id="recomendado">
             <i class="fa fa-exchange" aria-hidden="true" style="position: absolute; top: 8px; right: 20px; font-size: 1.5rem; color: black; transform: rotate(90deg);"></i>
             <h2 style="margin-top: 0; font-family: Helvetica;">Mostruário</h2>
             <div class="produto">
@@ -81,8 +81,13 @@
             <div class="menu">
                 <a href="index.html"><i class="fas fa-home" style="border-style: solid; box-shadow: 0px 0px 3px; border-width: 1.5px;"></i></a>
                 <i class="fas fa-shopping-cart"><span id="qntdd">0</span></i>
-                <i class="fas fa-search"></i>
+                <i class="fas fa-search" onclick="aparecer()"></i>
                 <i class="fas fa-user-circle"></i>
+            </div>
+        </div>
+        <div id="busca">
+            <div id="pesquisa">
+                <input type="text" id=""> <i class="fas fa-search"></i>
             </div>
         </div>
 </body>

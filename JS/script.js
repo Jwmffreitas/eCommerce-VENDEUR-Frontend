@@ -1,4 +1,5 @@
 cart = 0
+busca = 0
 
 function addItem() {
   cart ++
@@ -12,7 +13,19 @@ function addItem() {
 }
 
 function aparecer() {
-  setTimeout(() => {
-    document.getElementById('rodape').style.bottom = "20px"
-  }, 500)
+  if(busca == 0) {
+    document.getElementById('busca').style.display = "flex"
+    setTimeout(() => {
+      document.getElementById('pesquisa').style.bottom = "65px"
+      document.getElementById('pesquisa').style.boxShadow = "gray 0px 0px 15px"
+    }, 0)
+    busca = 1
+  } else {
+    document.getElementById('pesquisa').style.bottom = "20px"
+    document.getElementById('pesquisa').style.boxShadow = "gray 0px 0px 0px"
+    setTimeout(() => {
+      document.getElementById('busca').style.display = "none"
+    }, 600)
+    busca = 0
+  }
 }
