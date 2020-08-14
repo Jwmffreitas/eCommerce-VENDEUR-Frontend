@@ -10,3 +10,9 @@ function addItem() {
   }, 500)
 
 }
+
+function aparecer() {
+  setTimeout(() => {
+    document.getElementById('rodape').style.bottom = "20px"
+  }, 500)
+}

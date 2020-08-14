@@ -112,10 +112,11 @@ img {
 .rodape {
     position: fixed;
     width: 100%;
-    bottom: 20px;
+    bottom: -200px;
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: 1s;
 }
 
 .menu {
