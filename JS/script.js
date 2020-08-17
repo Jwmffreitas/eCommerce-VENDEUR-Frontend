@@ -29,3 +29,18 @@ function aparecer() {
     busca = 0
   }
 }
+
+function pesquisar() {
+  var search = document.getElementById('search')
+
+  search.addEventListener('keyup', function(e) {
+    if(e.keyCode === 13) {
+      e.preventDefault()
+      document.getElementById('btn-srch').click()
+    }
+  })
+}
+
+function p(x) {
+  window.alert(x)
+}

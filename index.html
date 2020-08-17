@@ -10,7 +10,7 @@
     <script src="https://kit.fontawesome.com/35cfca1e90.js" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
-<body>   
+<body onload="pesquisar()">   
     <header>
         <table width="100%" id="menu">
             <tr>
@@ -87,7 +87,7 @@
         </div>
         <div id="busca">
             <div id="pesquisa">
-                <input type="text" id=""> <i class="fas fa-search"></i>
+                <input type="text" id="search"> <i class="fas fa-search" id="btn-srch" onclick="p(search.value)"></i>
             </div>
         </div>
 </body>
