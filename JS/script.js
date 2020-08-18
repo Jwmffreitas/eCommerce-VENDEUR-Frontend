@@ -99,13 +99,16 @@ function addItem() {
 
 function aparecer() {
   if(busca == 0) {
+     document.getElementById('s').style.transition = "1s"
     document.getElementById('busca').style.display = "flex"
+    document.getElementById('s').style.color = "#c9a146"
     setTimeout(() => {
       document.getElementById('pesquisa').style.bottom = "65px"
       document.getElementById('pesquisa').style.boxShadow = "gray 0px 0px 15px"
     }, 0)
     busca = 1
   } else {
+   document.getElementById('s').style.color = "gray"
     document.getElementById('pesquisa').style.bottom = "20px"
     document.getElementById('pesquisa').style.boxShadow = "gray 0px 0px 0px"
     setTimeout(() => {

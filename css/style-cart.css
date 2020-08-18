@@ -59,6 +59,13 @@ body {
     text-overflow: ellipsis;
 }
 
+.box-produto .titulo {
+    width: 170px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
 .box-produto img {
     border-radius: 10px;
 }
