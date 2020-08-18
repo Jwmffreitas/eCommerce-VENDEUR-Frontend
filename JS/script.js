@@ -131,6 +131,7 @@ function pesquisar() {
 
 function p(x) {
   document.getElementById('search').value = ""
+  document.getElementById('s').style.color = "gray"
   document.getElementById('pesquisa').style.bottom = "20px"
   setTimeout(() => {
      document.getElementById('busca').style.display = "none"
