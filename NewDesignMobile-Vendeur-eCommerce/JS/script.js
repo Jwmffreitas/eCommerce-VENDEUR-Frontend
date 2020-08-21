@@ -2,19 +2,19 @@ cart = 0
 busca = 0
 troca = 0
 var vcorpo = `<div class="recomendado" id="recomendado">
-<i class="fa fa-exchange" onclick="trocar(vcorpo)" aria-hidden="true" style="position: absolute; top: 8px; right: 20px; font-size: 1.5rem; color: black; transform: rotate(90deg);"></i>
-<h2 style="margin-top: 0; font-family: Helvetica;">Mostruário</h2>
+<i class="fa fa-exchange" onclick="trocar(vcorpo)" aria-hidden="true" style="position: absolute; top: -10px; right: 20px; font-size: 1.5rem; color: black; transform: rotate(90deg);"></i>
+<h3 style="margin-top: 0; margin-left: 5px; font-family: Helvetica; color: gray;"></h3>
 <div class="produto">
-<div class="caixa-produto">
-    <img id="image" src="img/brinco.png" style="width: 100px; height: auto;">
-</div>
-<div>
-    <h4 style="position: relative; top: -15px;">Pulseira Gemstone</h4>
-    <p style="position: relative; top: -25px; color: gray;">Puls Gem Prec...</p>
-    <img src="img/5star.png" style="width: 80px; position: relative; top: -25px; margin: 0;">
-    <h4 style="position: relative; top: -35px; margin: 0;">R$ 8.612,00</h4>
-    <button class="w3-button w3-black" style="position: relative; top: -35px; border-radius: 15px; outline: 0; font-size: 10px; height: 25px; padding: 0; padding-left: 10px; padding-right: 10px;" onclick="addItem()">Add to cart</button>
-</div>
+    <div class="caixa-produto">
+        <img id="image" src="img/brinco.png" style="width: 100px; height: auto;">
+    </div>
+    <div>
+        <h4 style="position: relative; top: -15px;">Pulseira Gemstone</h4>
+        <p style="position: relative; top: -25px; color: gray;">Puls Gem Prec...</p>
+        <img src="img/5star.png" style="width: 80px; position: relative; top: -25px; margin: 0;">
+        <h4 style="position: relative; top: -35px; margin: 0;">R$ 8.612,00</h4>
+        <button class="w3-button w3-black" style="position: relative; top: -35px; border-radius: 15px; outline: 0; font-size: 10px; height: 25px; padding: 0; padding-left: 10px; padding-right: 10px;" onclick="addItem()">Add to cart</button>
+    </div>
 </div>
 <div class="produto">
     <div class="caixa-produto">
@@ -29,17 +29,18 @@ var vcorpo = `<div class="recomendado" id="recomendado">
     </div>
 </div>
 <div class="produto">
-<div class="caixa-produto">
-    <img id="image" src="img/casal.png" style="width: 100px; height: auto;">
+    <div class="caixa-produto">
+        <img id="image" src="img/casal.png" style="width: 100px; height: auto;">
+    </div>
+    <div>
+        <h4 style="position: relative; top: -15px;">Aliança Casal</h4>
+        <p style="position: relative; top: -25px; color: gray;">Alianc ouro...</p>
+        <img src="img/5star.png" style="width: 80px; position: relative; top: -25px; margin: 0;">
+        <h4 style="position: relative; top: -35px; margin: 0;">R$ 1.220,00</h4>
+        <button class="w3-button w3-black" style="position: relative; top: -35px; border-radius: 15px; outline: 0; font-size: 10px; height: 25px; padding: 0; padding-left: 10px; padding-right: 10px;" onclick="addItem()">Add to cart</button>
+    </div>
 </div>
-<div>
-    <h4 style="position: relative; top: -15px;">Aliança Casal</h4>
-    <p style="position: relative; top: -25px; color: gray;">Alianc ouro...</p>
-    <img src="img/5star.png" style="width: 80px; position: relative; top: -25px; margin: 0;">
-    <h4 style="position: relative; top: -35px; margin: 0;">R$ 1.220,00</h4>
-    <button class="w3-button w3-black" style="position: relative; top: -35px; border-radius: 15px; outline: 0; font-size: 10px; height: 25px; padding: 0; padding-left: 10px; padding-right: 10px;" onclick="addItem()">Add to cart</button>
-</div>
-</div>
+
 </div>`
 var vcorpo2 = `        <div class="recomendado" id="recomendado">
 <i class="fa fa-exchange" onclick="trocar(vcorpo)" aria-hidden="true" style="position: absolute; top: 0px; right: 20px; font-size: 1.5rem; color: black; transform: rotate(90deg);"></i>
@@ -82,9 +83,9 @@ var vcorpo2 = `        <div class="recomendado" id="recomendado">
 </div>
 
 </div>`
-var loading = `<div style ="height: 70vh; text-align:center;"><i class="fa fa-exchange" onclick="trocar(vcorpo)" aria-hidden="true" style="position: absolute; top: 8px; right: 20px; font-size: 1.5rem; color: black; transform: rotate(90deg);"></i>
+var loading = `<div style ="height: 70vh; text-align:center;"><i class="fa fa-exchange" onclick="trocar(vcorpo)" aria-hidden="true" style="position: absolute; top: 0px; right: 20px; font-size: 1.5rem; color: black; transform: rotate(90deg);"></i>
 <h3 style="margin-top: 0; margin-left: 5px; font-family: Helvetica; color: gray;"></h3>
-<img src="./img/loading.gif" style="width: 100px; height: auto;"></div>`
+<img src="./img/loading.gif" style="width: 100px; height: auto; margin-top: 30px"></div>`
 
 function addItem() {
   cart ++
