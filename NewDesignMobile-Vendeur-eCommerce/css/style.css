@@ -1,0 +1,178 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    background-color: black;
+    height: 100%;
+}
+
+
+header {
+    color: white;
+    z-index: 1002;
+    position: relative;
+    top: 0;
+}
+
+.vendeur {
+    display: none;
+    font-family: Helvetica;
+}
+
+@media(min-width: 500px) {
+    .vendeur {
+        display: inline;
+    }
+}
+
+.modal {
+    top: 0;
+    width: 100vw;
+    height: 100%;
+    display: none;
+    background: rgba(0,0,0,0.5);
+    z-index: 1000;
+    position: fixed;
+}
+
+img {
+    width: 50px;
+    margin: 5px;
+}
+
+@media(min-width: 799px) {
+    table .menu-botao {
+        display: none;
+    }
+}
+
+@media(min-width:0px) and (max-width: 799px) {
+    table #botao {
+        display: none;
+    }
+}
+
+.destaque {
+    position: relative;
+    left: 0px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to bottom, #e9d7ad, #F3E9D3);
+    border-top-left-radius: 80%;
+    height: 300px;
+}
+
+.box-destaque {
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 250px;
+    height: 215px;
+    text-align: center;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: gray 0px 0px 5px;
+}
+
+.recomendado {
+    text-align: center;
+    position: relative;
+    background-image: linear-gradient(to bottom, #F3E9D3, white);
+}
+
+.produto {
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    text-align: left;
+}
+
+.produto p {
+    width: 150px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.caixa-produto {
+    background-color: white;
+    width: 100px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    box-shadow: gray 0px 6px 10px;
+    height: 120px;
+}
+
+.rodape {
+    position: fixed;
+    width: 100%;
+    bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 1s;
+    z-index: 20000;
+}
+
+#pesquisa {
+    font-size: 18px;
+    width: 270px;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    text-align: center;
+    background-color: white;
+    padding: 5px;
+    box-shadow: gray 0px 0px 0px;
+    position: fixed;
+    bottom: 30px;
+    transition: 1s;
+}
+
+#busca {
+    position: fixed;
+    width: 100%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    transition: 1s;
+}
+
+#busca input {
+    border-radius: 10px;
+    text-decoration: none;
+    border: solid gray 1px;
+    width: 200px;
+    margin-bottom: 15px;
+}
+
+.menu {
+    font-size: 25px;
+    border-radius: 20px;
+    text-align: center;
+    background-color: white;
+    box-shadow: gray 0px 0px 15px;
+    width: 270px;
+}
+
+.menu i {
+    padding: 10px;
+    margin: 5px;
+    border-radius: 100%;
+}
+
+#qntdd {
+    position: relative;
+    bottom: 20px;
+    color: black;
+    transition: 1s;
+    font-size: 15px;
+    display: none;
+}
