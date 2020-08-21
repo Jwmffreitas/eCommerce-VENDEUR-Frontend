@@ -43,7 +43,7 @@ var vcorpo = `<div class="recomendado" id="recomendado">
 
 </div>`
 var vcorpo2 = `        <div class="recomendado" id="recomendado">
-<i class="fa fa-exchange" onclick="trocar(vcorpo)" aria-hidden="true" style="position: absolute; top: 0px; right: 20px; font-size: 1.5rem; color: black; transform: rotate(90deg);"></i>
+<i class="fa fa-exchange" onclick="trocar(vcorpo)" aria-hidden="true" style="position: absolute; top: -10px; right: 20px; font-size: 1.5rem; color: black; transform: rotate(90deg);"></i>
 <h3 style="margin-top: 0; margin-left: 5px; font-family: Helvetica; color: gray;"></h3>
 <div class="produto">
     <div class="caixa-produto">
