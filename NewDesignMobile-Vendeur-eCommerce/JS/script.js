@@ -42,8 +42,8 @@ var vcorpo = `<div class="recomendado" id="recomendado">
 </div>
 </div>`
 var vcorpo2 = `        <div class="recomendado" id="recomendado">
-<i class="fa fa-exchange" onclick="trocar(vcorpo)" aria-hidden="true" style="position: absolute; top: 8px; right: 20px; font-size: 1.5rem; color: black; transform: rotate(90deg);"></i>
-<h2 style="margin-top: 0; font-family: Helvetica;">Mostruário</h2>
+<i class="fa fa-exchange" onclick="trocar(vcorpo)" aria-hidden="true" style="position: absolute; top: 0px; right: 20px; font-size: 1.5rem; color: black; transform: rotate(90deg);"></i>
+<h3 style="margin-top: 0; margin-left: 5px; font-family: Helvetica; color: gray;"></h3>
 <div class="produto">
     <div class="caixa-produto">
         <img id="image" src="img/colar.png" style="width: 100px; height: auto;">
@@ -82,8 +82,8 @@ var vcorpo2 = `        <div class="recomendado" id="recomendado">
 </div>
 
 </div>`
-var loading = `<div style ="height: 70vh"><i class="fa fa-exchange" onclick="trocar(vcorpo)" aria-hidden="true" style="position: absolute; top: 8px; right: 20px; font-size: 1.5rem; color: black; transform: rotate(90deg);"></i>
-<h2 style="margin-top: 0; font-family: Helvetica;">Mostruário</h2>
+var loading = `<div style ="height: 70vh; text-align:center;"><i class="fa fa-exchange" onclick="trocar(vcorpo)" aria-hidden="true" style="position: absolute; top: 8px; right: 20px; font-size: 1.5rem; color: black; transform: rotate(90deg);"></i>
+<h3 style="margin-top: 0; margin-left: 5px; font-family: Helvetica; color: gray;"></h3>
 <img src="./img/loading.gif" style="width: 100px; height: auto;"></div>`
 
 function addItem() {

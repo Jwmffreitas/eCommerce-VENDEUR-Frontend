@@ -64,7 +64,8 @@ img {
     align-items: center;
     background-image: linear-gradient(to bottom, #e9d7ad, #F3E9D3);
     border-top-left-radius: 80%;
-    height: 300px;
+    height: 280px;
+    margin-bottom: -15px;
 }
 
 .box-destaque {
@@ -78,8 +79,44 @@ img {
     box-shadow: gray 0px 0px 5px;
 }
 
-.recomendado {
+.categorias {
+    background-color: #F3E9D3;
     text-align: center;
+    padding-bottom: 20px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.carrossel {
+    background-color: #F3E9D3;
+    display: flex;
+    overflow: hidden;
+    overflow-x: scroll;
+    padding-left: 10px;
+}
+
+@media(min-width: 350px) {
+    .carrossel {
+        overflow: none;
+        justify-content: center;
+        align-items: center;
+        padding-left: 0;
+    }
+}
+
+.box-categoria {
+    border-radius: 10px;
+    display: grid;
+}
+
+.box-categoria img {
+    width: 30px;
+}
+
+.recomendado {
+    padding-top: 10px;
+    text-align: left;
     position: relative;
     background-image: linear-gradient(to bottom, #F3E9D3, white);
 }
