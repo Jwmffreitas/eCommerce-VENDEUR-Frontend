@@ -5,6 +5,7 @@
 }
 
 body {
+    background-color: white;
 }
 
 
@@ -59,4 +60,14 @@ img {
 a {
     margin-top: 10px;
     float: right;
+}
+
+.menu {
+    display: grid;
+    justify-content: left;
+    position: fixed;
+    padding-left: 10px;
+    background: black;
+    width: 15%;
+    height: 100vh;
 }
