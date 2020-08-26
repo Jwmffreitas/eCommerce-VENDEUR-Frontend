@@ -17,12 +17,24 @@ header {
     top: 0;
 }
 
+@media(min-width: 799px) and (max-width: 801px) {
+    #menu img {
+        margin-left: 35px;
+    }
+}
+
+@media(min-width: 801px) {
+    #menu img {
+        margin-left: 10px;
+    }
+}
+
 .vendeur {
     display: none;
     font-family: Helvetica;
 }
 
-@media(min-width: 500px) {
+@media(min-width: 900px) {
     .vendeur {
         display: inline;
     }
@@ -65,9 +77,16 @@ a {
 .menu {
     display: grid;
     justify-content: left;
-    position: fixed;
+    position: relative;
+    float: left;
     padding-left: 10px;
+    padding-top: 20px;
     background: black;
-    width: 15%;
+    width: 18%;
     height: 100vh;
+    grid-template-rows: 50px 50px;
+}
+
+.menu div {
+    grid
 }
