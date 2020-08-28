@@ -5,7 +5,7 @@
 }
 
 body {
-    background-image: linear-gradient(to bottom, #e9d7ad, #F3E9D3, white);
+    background-image: linear-gradient(to bottom, #e9d7ad, #F3E9D3);
 }
 
 
@@ -54,6 +54,12 @@ header {
     padding: 3px;
 }
 
+@media (min-width: 1000px) {
+    .pesquisa input {
+        width: 40%;
+    }
+}
+
 .modal {
     top: 0;
     width: 100vw;
@@ -97,6 +103,15 @@ a {
 .geral {
     text-align: left;
     margin: 10px;
+}
+
+.card {
+    transition: 1s;
+}
+
+.card:hover {
+    transform: scale(1.1);
+    box-shadow: gray 0px 0px 5px;
 }
 
 .imagem {
