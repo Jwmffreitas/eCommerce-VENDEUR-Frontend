@@ -5,7 +5,7 @@
 }
 
 body {
-    background-color: white;
+    background-image: linear-gradient(to bottom, #e9d7ad, #F3E9D3, white);
 }
 
 
@@ -87,6 +87,25 @@ a {
     grid-template-rows: 50px 50px;
 }
 
-.menu div {
-    grid
+.linha {
+    display: grid;
+    grid-template-columns: 250px 250px;
+    justify-content: center;
+    align-items: center;
+}
+
+.geral {
+    text-align: left;
+    margin: 10px;
+}
+
+.imagem {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagem img {
+    width: 150px;
+    border-radius: 10%;
 }
