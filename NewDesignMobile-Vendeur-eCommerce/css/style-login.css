@@ -84,7 +84,7 @@ input {
 footer {
     width: 100%;
     text-align: center;
-    position: fixed;
+    position: relative;
     bottom: 0px;
     margin-top: 10px;
     margin-bottom: 5px;
