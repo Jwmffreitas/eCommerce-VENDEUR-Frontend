@@ -50,7 +50,6 @@ body {
 }
 
 .opcoes {
-    border-top: gray solid 0.1px;
     width: 100%;
     display: flex;
     position: relative;
