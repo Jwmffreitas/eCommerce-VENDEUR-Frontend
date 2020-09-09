@@ -49,32 +49,35 @@ body {
     width: 300px;
 }
 
-.box-produto {
-    border-radius: 10px;
-    box-shadow: gray 0px 0px 10px 0px;
+.opcoes {
+    border-top: gray solid 0.1px;
+    width: 100%;
+    display: flex;
     position: relative;
+    top: -80px;
     margin-top: -20px;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
     background-color: white;
-    padding: 5px;
+    padding: 10px;
+    padding-top: 0px;
 }
 
-.box-produto p {
+.opcoes p {
     width: 180px;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
 }
 
-.box-produto .titulo {
+.opcoes .titulo {
     width: 170px;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
 }
 
-.box-produto img {
-    border-radius: 10px;
+.opcoes i {
+    font-size: 20px;
 }
 
 .modal {
