@@ -20,8 +20,6 @@ body {
     justify-content: center;
     top: 0;
     padding-bottom: 40%;
-    border-bottom-left-radius: 15px;
-    border-bottom-right-radius: 15px;
     height: 200px;
     width: 100vw;
 }
@@ -61,22 +59,20 @@ body {
     padding-top: 0px;
 }
 
-.opcoes p {
-    width: 180px;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-}
-
-.opcoes .titulo {
-    width: 170px;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-}
-
 .opcoes i {
     font-size: 20px;
+}
+
+.sub-opcoes {
+    width: 100%;
+    display: flex;
+    position: relative;
+    top: -80px;
+    margin-top: -20px;
+    margin-bottom: 10px;
+    background-color: white;
+    padding: 10px;
+    padding-top: 0px;
 }
 
 .modal {
