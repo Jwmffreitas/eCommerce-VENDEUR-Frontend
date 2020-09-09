@@ -20,13 +20,13 @@ body {
     justify-content: center;
     top: 0;
     padding-bottom: 40%;
-    border-bottom-left-radius: 20%;
-    border-bottom-right-radius: 20%;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
     height: 200px;
     width: 100vw;
 }
 
-.carrinho {
+.perfil {
     display: grid;
     justify-content: center;
     align-items: center;
@@ -34,15 +34,18 @@ body {
 
 .box {
     padding: 5px;
+    padding-top: 10px;
     padding-right: 10px;
     padding-left: 10px;
     position: relative;
-    top: -50px;
-    border-radius: 10px;
-    color: white;
-    background: linear-gradient(160deg, black, #5e4b20, #c9a146);
+    display: grid;
+    justify-items: center;
+    top: -100px;
+    border-radius: 20px;
+    color: black;
+    background-color: white;
+    /*background: linear-gradient(160deg, black, #5e4b20, #c9a146);*/
     text-align: right;
-    box-shadow: gray 0px 0px 10px 0px;
     width: 300px;
 }
 
