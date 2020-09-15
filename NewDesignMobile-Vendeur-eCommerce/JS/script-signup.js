@@ -36,8 +36,8 @@ function verificarWhats () {
     }else {
         document.getElementById('number').style.width = "100%"
         var numero = document.getElementById('number').value
-        if(numero.length > 9){
-            console.log('nao pode')
+        if(numero.length > 11){
+            document.getElementById('number').readOnly = true
         }
     }
 }
