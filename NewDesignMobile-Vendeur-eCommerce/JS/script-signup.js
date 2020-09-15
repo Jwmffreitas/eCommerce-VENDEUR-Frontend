@@ -41,7 +41,9 @@ function verificarWhats () {
             const part1 = numero.slice(0, 2)
             const part2 = numero.slice(2, 7)
             const part3 = numero.slice(7, 11)
-            console.log(`(${part1}) ${part2}-${part3}`)
+            document.getElementById('number').type = "text"
+            document.getElementById('number').value = `(${part1}) ${part2}-${part3}`
+            //console.log(`(${part1}) ${part2}-${part3}`)
         }
     }
 }
