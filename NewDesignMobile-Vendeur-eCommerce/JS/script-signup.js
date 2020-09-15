@@ -36,8 +36,12 @@ function verificarWhats () {
     }else {
         document.getElementById('number').style.width = "100%"
         var numero = document.getElementById('number').value
-        if(numero.length > 11){
+        if(numero.length == 11){
             document.getElementById('number').readOnly = true
+            const part1 = numero.slice(0, 2)
+            const part2 = numero.slice(2, 7)
+            const part3 = numero.slice(7, 11)
+            console.log(`(${part1}) ${part2}-${part3}`)
         }
     }
 }
