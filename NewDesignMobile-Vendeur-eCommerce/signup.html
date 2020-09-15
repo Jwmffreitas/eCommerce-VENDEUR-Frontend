@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="css/style-signup.css">
+    <script src="JS/script-signup.js"></script>
+    <script src="https://kit.fontawesome.com/35cfca1e90.js" crossorigin="anonymous"></script>
+    <title>VENDEUR - Login</title>
+</head>
+<body> 
+    <div class="corpo">
+        <header>
+            <img src="img/logomaior-134x128.png">
+        </header>
+        <div class="formulario">
+            <div class="cabeca">
+                <h2>Cadastro</h2>
+            </div>
+            <form class="w3-container">
+
+                <label><i class="fas fa-at"></i> Email</label>
+                <input class="w3-input w3-animate-input" id="email" type="text" style="width:30%; background: none;" oninput="verificarEmail()">
+
+                <label><i class="fas fa-user"></i> Nome</label>
+                <input class="w3-input w3-animate-input" id="email" type="text" style="width:30%; background: none;" oninput="verificarEmail()">
+                
+                <label><i class="fas fa-lock"></i> Senha</label>
+                <input class="w3-input w3-animate-input" id="senha" type="password" style="width:30%; background: none;" oninput="verificarSenha()">
+
+                <label><i class="fas fa-lock"></i> Confirmar senha</label>
+                <input class="w3-input w3-animate-input" id="senha" type="password" style="width:30%; background: none;" oninput="verificarSenha()">
+
+                <label><i class="fab fa-whatsapp"></i> WhatsApp</label>
+                <input class="w3-input w3-animate-input" id="number" type="number" style="width:30%; background: none;" oninput="verificarWhats()">
+
+                <label><i class="fas fa-map-marker-alt"></i> Endereço</label>
+                <input class="w3-input w3-animate-input" id="ender" type="text" placeholder="Endereço completo" style="width:160px; margin-top: 3px; background: none;" oninput="verificarEndereco()">
+                <div style="display: flex; align-items: center; width: 100%;">
+                    <input class="w3-input w3-input" id="comp" type="text" placeholder="Complemento" style="width:160px; background: none;" oninput="verificarComp()">
+                    <label style="margin-left: 5px;">UF:</label><select name="UF" id="" style="width: 50px; height: 25px; margin-left: 5px; margin-bottom: 0px; ">
+                        <option value="AC">AC</option>
+                        <option value="AL">AL</option>
+                        <option value="AP">AP</option>
+                        <option value="AM">AM</option>
+                        <option value="BA">BA</option>
+                        <option value="CE">CE</option>
+                        <option value="DF">DF</option>
+                        <option value="ES">ES</option>
+                        <option value="GO">GO</option>
+                        <option value="MA">MA</option>
+                        <option value="MT">MT</option>
+                        <option value="MS">MS</option>
+                        <option value="MG">MG</option>
+                        <option value="PA">PA</option>
+                        <option value="PB">PB</option>
+                        <option value="PR">PR</option>
+                        <option value="PE">PE</option>
+                        <option value="PI">PI</option>
+                        <option value="RJ">RJ</option>
+                        <option value="RN">RN</option>
+                        <option value="RS">RS</option>
+                        <option value="RO">RO</option>
+                        <option value="RR">RR</option>
+                        <option value="SC">SC</option>
+                        <option value="SP">SP</option>
+                        <option value="SE">SE</option>
+                        <option value="TO">TO</option>
+                    </select>
+                </div>
+                
+                </form>
+                <a href="index.html"><button class="w3-button w3-black" style="margin-top: 10px; width: 100%; border-radius: 10px;">Enviar</button></a>
+        </div>
+        <!--<footer><p>Não tem uma conta?<span style="color: red;"> Clique aqui</span></p></footer>-->
+    </div>
+</body>
+</html>
