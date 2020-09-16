@@ -24,16 +24,16 @@
                 <input class="w3-input w3-animate-input" id="email" type="email" style="width:30%; background: none;" oninput="verificarEmail()">
 
                 <label><i class="fas fa-user"></i> Nome</label>
-                <input class="w3-input w3-animate-input" id="email" type="text" style="width:30%; background: none;" oninput="verificarEmail()">
+                <input class="w3-input w3-animate-input" id="nome" type="text" style="width:30%; background: none;" oninput="verificarNome()">
                 
                 <label><i class="fas fa-lock"></i> Senha</label>
                 <input class="w3-input w3-animate-input" id="senha" type="password" style="width:30%; background: none;" oninput="verificarSenha()">
 
                 <label><i class="fas fa-lock"></i> Confirmar senha</label>
-                <input class="w3-input w3-animate-input" id="senha" type="password" style="width:30%; background: none;" oninput="verificarSenha()">
+                <input class="w3-input w3-animate-input" id="csenha" type="password" style="width:30%; background: none;" oninput="confirmarSenha()">
 
                 <label><i class="fab fa-whatsapp"></i> WhatsApp</label>
-                <input class="w3-input w3-animate-input" id="number" type="number" style="width:30%; background: none;" oninput="verificarWhats()">
+                <input class="w3-input w3-animate-input" id="number" type="number" placeholder="Ex. DD988799789" style="width:160px; background: none;" oninput="verificarWhats()">
 
                 <label><i class="fas fa-map-marked-alt"></i> CEP</label>
                 <div style="display: flex; align-items: center; width: 100%;">
@@ -43,9 +43,11 @@
 
                 <label><i class="fas fa-map-marker-alt"></i> Endereço</label>
                 <input class="w3-input w3-animate-input" id="ender" type="text" placeholder="Endereço completo" style="width:160px; margin-top: 3px; background: none;" oninput="verificarEndereco()">
+                <input class="w3-input w3-animate-input" id="city" type="text" placeholder="Cidade" style="width:160px; margin-top: 3px; background: none;" oninput="verificarEndereco()">
+                <input class="w3-input w3-animate-input" id="neigh" type="text" placeholder="Bairro" style="width:160px; margin-top: 3px; background: none;" oninput="verificarEndereco()">
                 <div style="display: flex; align-items: center; width: 100%;">
                     <input class="w3-input w3-input" id="comp" type="text" placeholder="Complemento" style="width:160px; background: none;" oninput="verificarComp()">
-                    <label style="margin-left: 5px;">UF:</label><select name="UF" id="" style="width: 50px; height: 25px; margin-left: 5px; margin-bottom: 0px; ">
+                    <label style="margin-left: 5px;">UF:</label><select name="UF" id="UF" style="width: 50px; height: 25px; margin-left: 5px; margin-bottom: 0px; ">
                         <option value="AC">AC</option>
                         <option value="AL">AL</option>
                         <option value="AP">AP</option>
@@ -77,7 +79,7 @@
                 </div>
                 
                 </form>
-                <a href="index.html"><button class="w3-button w3-black" style="margin-top: 10px; width: 100%; border-radius: 10px;">Enviar</button></a>
+                <button class="w3-button w3-black" style="margin-top: 10px; width: 100%; border-radius: 10px;" onclick="enviarDados()">Enviar</button>
         </div>
         <!--<footer><p>Não tem uma conta?<span style="color: red;"> Clique aqui</span></p></footer>-->
     </div>
