@@ -38,20 +38,40 @@ function confirmarSenha () {
 
 function verificarWhats () {
     if(document.getElementById('number').value == "") {
-        document.getElementById('number').style.width = "52%"
+        document.getElementById('number').style.width = "160px"
     }else {
         document.getElementById('number').style.width = "100%"
         var numero = document.getElementById('number').value
-        if(numero.length == 11){
-            document.getElementById('number').readOnly = true
-            const part1 = numero.slice(0, 2)
-            const part2 = numero.slice(2, 7)
-            const part3 = numero.slice(7, 11)
-            document.getElementById('number').type = "text"
-            document.getElementById('number').value = `(${part1})${part2}-${part3}`
-            //console.log(`(${part1}) ${part2}-${part3}`)
+        var num = numero.indexOf("(", ")", "-")
+        if(num >= 0) {
+            num = numero.replace("(", "")
+            num = num.replace(")", "")
+            num = num.replace("-", "")
+            document.getElementById('number').value = num
+            if(num == 11) {
+                document.getElementById('number').readOnly = true
+                const part1 = num.slice(0, 2)
+                const part2 = num.slice(2, 7)
+                const part3 = num.slice(7, 11)
+                document.getElementById('number').type = "text"
+                document.getElementById('number').value = `(${part1})${part2}-${part3}`
+           }
+        }else {
+            if(numero.length == 11){
+                document.getElementById('number').readOnly = true
+                const part1 = numero.slice(0, 2)
+                const part2 = numero.slice(2, 7)
+                const part3 = numero.slice(7, 11)
+                document.getElementById('number').type = "text"
+                document.getElementById('number').value = `(${part1})${part2}-${part3}`
+                //console.log(`(${part1}) ${part2}-${part3}`)
+            }
         }
     }
+}
+
+function reativarWhats () {
+    document.getElementById('number').readOnly = false
 }
 
 function verificarCEP () {
