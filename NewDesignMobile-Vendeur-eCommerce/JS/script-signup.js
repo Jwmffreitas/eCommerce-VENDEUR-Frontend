@@ -59,12 +59,27 @@ function verificarCEP () {
     }else {
         document.getElementById('cep').style.width = "40%"
         var cep = document.getElementById('cep').value
-        if(cep.length == 8) {
-            document.getElementById('cep').readOnly = true
-            const part1 = cep.slice(0,5)
-            const part2 = cep.slice(5,8)
-            document.getElementById('cep').type = "text"
-            document.getElementById('cep').value = `${part1}-${part2}` 
+        var resultado = cep.indexOf("-")
+        console.log(resultado)
+        if(resultado >= 0) {
+            resultado = cep.replace("-", "")
+            document.getElementById('cep').value = resultado
+            console.log(resultado)
+            if(resultado == 8) {
+                document.getElementById('cep').readOnly = true
+                const part1 = resultado.slice(0,5)
+                const part2 = resultado.slice(5,8)
+                document.getElementById('cep').type = "text"
+                document.getElementById('cep').value = `${part1}-${part2}` 
+            }
+        }else {
+            if(cep.length == 8) {
+                document.getElementById('cep').readOnly = true
+                const part1 = cep.slice(0,5)
+                const part2 = cep.slice(5,8)
+                document.getElementById('cep').type = "text"
+                document.getElementById('cep').value = `${part1}-${part2}` 
+            }
         }
     }
 }
