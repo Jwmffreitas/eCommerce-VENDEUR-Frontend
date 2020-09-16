@@ -42,21 +42,33 @@ function verificarWhats () {
             const part2 = numero.slice(2, 7)
             const part3 = numero.slice(7, 11)
             document.getElementById('number').type = "text"
-            document.getElementById('number').value = `(${part1}) ${part2}-${part3}`
+            document.getElementById('number').value = `(${part1})${part2}-${part3}`
             //console.log(`(${part1}) ${part2}-${part3}`)
         }
     }
 }
 
-function aumentarCEP() {
+/*function aumentarCEP() {
     document.getElementById('cep').style.setProperty("width", "40%", "!important")
     verificarCEP()
-}
+}*/
 
 function verificarCEP () {
     if(document.getElementById('cep').value == "") {
         document.getElementById('cep').style.width = "30%"
     }else {
         document.getElementById('cep').style.width = "40%"
+        var cep = document.getElementById('cep').value
+        if(cep.length == 8) {
+            document.getElementById('cep').readOnly = true
+            const part1 = cep.slice(0,5)
+            const part2 = cep.slice(5,8)
+            document.getElementById('cep').type = "text"
+            document.getElementById('cep').value = `${part1}-${part2}` 
+        }
     }
+}
+
+function reativarCEP () {
+    document.getElementById('cep').readOnly = false
 }
