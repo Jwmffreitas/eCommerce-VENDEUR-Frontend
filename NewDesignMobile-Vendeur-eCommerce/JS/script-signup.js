@@ -1,5 +1,18 @@
 var confirma = 'Not!'
 
+function alerta() {
+    $.iGrowl({
+        type: 'error',
+        delay: 5000,
+        title: 'Error',
+        message: 'Verifique todos os campos',
+        image: {
+         src: 'img/logomaior-134x128.png',
+         class: 'example-image'
+        }
+       })	
+}
+
 
 function verificarEmail () {
     if(document.getElementById('email').value == "") {
