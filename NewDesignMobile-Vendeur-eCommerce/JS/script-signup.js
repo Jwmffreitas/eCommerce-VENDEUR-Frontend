@@ -97,7 +97,7 @@ function verificarEndereco () {
     }
 }
 
-function verificarComp () {
+function verificarBairro () {
     if(document.getElementById('comp').value == "") {
         document.getElementById('comp').style.width = "160px"
     }else {
