@@ -47,3 +47,16 @@ function verificarWhats () {
         }
     }
 }
+
+function aumentarCEP() {
+    document.getElementById('cep').style.setProperty("width", "40%", "!important")
+    verificarCEP()
+}
+
+function verificarCEP () {
+    if(document.getElementById('cep').value == "") {
+        document.getElementById('cep').style.width = "30%"
+    }else {
+        document.getElementById('cep').style.width = "40%"
+    }
+}

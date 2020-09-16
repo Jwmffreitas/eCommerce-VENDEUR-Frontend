@@ -35,6 +35,12 @@
                 <label><i class="fab fa-whatsapp"></i> WhatsApp</label>
                 <input class="w3-input w3-animate-input" id="number" type="number" style="width:30%; background: none;" oninput="verificarWhats()">
 
+                <label><i class="fas fa-map-marked-alt"></i> CEP</label>
+                <div style="display: flex; align-items: center; width: 100%;">
+                    <input class="w3-input w3-animate-input" id="cep" type="number" style="width:30%; background: none;" oninput="verificarCEP()" onclick="aumentarCEP()">
+                    <i class="fas fa-search" style="width: 60%; margin-left: 10px; font-size: 18px;"></i>
+                </div>
+
                 <label><i class="fas fa-map-marker-alt"></i> Endereço</label>
                 <input class="w3-input w3-animate-input" id="ender" type="text" placeholder="Endereço completo" style="width:160px; margin-top: 3px; background: none;" oninput="verificarEndereco()">
                 <div style="display: flex; align-items: center; width: 100%;">
