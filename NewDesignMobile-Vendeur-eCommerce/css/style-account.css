@@ -74,6 +74,20 @@ body {
     padding-top: 0px;
 }
 
+#foto {
+    position: fixed;
+    display: none;
+    left:50%;
+    top:50%;
+    margin-left:-130px;
+    margin-top:-150px;
+    z-index: 2000;
+    background-color: white;
+    width: 260px; height: 295px;
+    justify-content: center;
+    border-radius: 10%;
+}
+
 .modal {
     top: 0;
     width: 100vw;
