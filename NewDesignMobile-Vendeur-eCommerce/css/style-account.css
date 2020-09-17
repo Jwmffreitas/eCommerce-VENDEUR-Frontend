@@ -94,7 +94,7 @@ img {
     position: relative;
     top: -90px;
     background-color: rgb(221, 221, 221);
-    display: grid;
+    display: none;
 }
 
 .produto {

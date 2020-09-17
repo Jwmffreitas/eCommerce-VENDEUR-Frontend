@@ -5,9 +5,10 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Minha Conta</title>
         <link rel="stylesheet" href="css/style-account.css">
-        <script src="JS/script.js"></script>
+        <script src="JS/script-account.js"></script>
         <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
         <script src="https://kit.fontawesome.com/35cfca1e90.js" crossorigin="anonymous"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     </head>
     <body onload="pesquisar()">
 
@@ -65,10 +66,10 @@
                         <h4>Meus pedidos</h4>
                     </div>
                     <div style="width: 10%; text-align: right; display: grid; align-items: center; padding-top: 10px;">
-                        <i class="fas fa-chevron-down" style="transform: rotate(270deg);"></i>
+                        <i class="fas fa-chevron-down" id="seta" style="transform: rotate(270deg); position: relative;" onclick="mostrarPedidos()"></i>
                     </div>
                 </div>
-                <div class="pedidos">
+                <div class="pedidos" id="pedidos">
                     <div class="produto">
                         <div class="caixa-produto">
                             <img id="image" src="img/colar.png" style="width: 80px; height: auto;">
