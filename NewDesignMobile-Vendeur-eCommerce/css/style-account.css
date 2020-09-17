@@ -21,7 +21,6 @@ body {
     top: 0;
     padding-bottom: 40%;
     height: 200px;
-    width: 100vw;
 }
 
 .perfil {
@@ -88,6 +87,28 @@ body {
 img {
     width: 70px;
     margin: 5px;
+}
+
+.pedidos {
+    border-radius: 10px;
+    position: relative;
+    top: -90px;
+    background-color: rgb(221, 221, 221);
+    display: grid;
+}
+
+.produto {
+    margin: 0;
+    padding-top: 10px;
+    position: relative;
+    display: flex;
+}
+
+.produto p {
+    width: 150px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .rodape {
