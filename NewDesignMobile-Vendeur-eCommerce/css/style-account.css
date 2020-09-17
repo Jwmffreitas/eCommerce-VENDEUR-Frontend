@@ -80,7 +80,7 @@ body {
     height: 100%;
     display: none;
     background: rgba(0,0,0,0.5);
-    z-index: 1000;
+    z-index: 1999;
     position: fixed;
 }
 
@@ -127,7 +127,7 @@ img {
     justify-content: center;
     align-items: center;
     transition: 1s;
-    z-index: 20000;
+    z-index: 1998;
 }
 
 #pesquisa {

@@ -1,5 +1,5 @@
 var x = 0
-
+var y = 0
 
 function mostrarPedidos() {
     if(x == 0) {
@@ -16,7 +16,15 @@ function mostrarPedidos() {
 }
 
 function abrirFoto() {
-    
+    if(y == 0) {
+        document.getElementById('modal').style.display = "block"
+        document.getElementById('foto').style.display = "grid"
+        y = 1
+    }else {
+        document.getElementById('modal').style.display = "none"
+        document.getElementById('foto').style.display ="none" 
+        y = 0
+    }
 }
 
 function aparecer() {
