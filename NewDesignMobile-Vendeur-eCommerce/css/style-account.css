@@ -97,6 +97,14 @@ img {
     display: none;
 }
 
+.pedido {
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    padding-top: 10px;
+    width: 100%;
+}
+
 .produto {
     margin: 0;
     padding-top: 10px;
