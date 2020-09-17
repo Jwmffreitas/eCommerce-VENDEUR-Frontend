@@ -15,6 +15,10 @@ function mostrarPedidos() {
     }
 }
 
+function abrirFoto() {
+    
+}
+
 function aparecer() {
     if(busca == 0) {
        document.getElementById('s').style.transition = "1s"
