@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Minha Conta</title>
         <link rel="stylesheet" href="css/style-chat.css">
-        <script src="JS/script-account.js"></script>
+        <script src="JS/script-chat.js"></script>
         <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
         <script src="https://kit.fontawesome.com/35cfca1e90.js" crossorigin="anonymous"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -21,7 +21,7 @@
             </div>
         </header>
 
-        <section class="chat">
+        <section class="chat" id="chat">
             <div class="mensagem">
                 <div class="balaoU">
                     <h5 style="margin: 0; float: left;">
@@ -48,7 +48,7 @@
                         Sim senhor, providenciaremos.
                     </h5>
                     <div style="margin-top: 5px;">
-                        <i class="fas fa-paper-plane" style="float: right; font-size: 15px;"></i>
+                        <i class="fas fa-check-circle" style="float: right; font-size: 15px;"></i>
                     </div>
                 </div>
             </div>
@@ -56,7 +56,7 @@
 
         <footer>
             <div>
-                <input type="text" style="width: 70%; height: 38px; border-radius: 50px; padding: 10px; border: black solid 1px; z-index: 1000;"><button class="w3-button w3-black" type="submit" style="width: 30%; border-bottom-right-radius: 50px; border-top-right-radius: 50px; position: relative; right: 20px;">Enviar</button>
+                <input type="text" id="mensagem" style="width: 70%; height: 38px; border-radius: 50px; padding: 10px; border: black solid 1px; z-index: 1000;"><button onclick="enviarMensagem()" class="w3-button w3-black" type="submit" style="width: 30%; border-bottom-right-radius: 50px; border-top-right-radius: 50px; position: relative; right: 20px;">Enviar</button>
             </div>
         </footer>
     </body>
