@@ -17,9 +17,10 @@ body {
     display: flex;
     padding-top: 15px;
     align-items: center;
+    width: 100%;
     justify-content: center;
     top: 0;
-    padding-bottom: 40%;
+    padding-bottom: 150px;
     height: 200px;
 }
 
