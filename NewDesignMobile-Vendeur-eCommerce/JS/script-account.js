@@ -29,9 +29,13 @@ function abrirFoto() {
     }
 }
 
-/* function enviarFoto() {
-  $('#photo').attr("src", document.getElementById('file').files[0].name)
-} */
+function trocarFoto() {
+  setTimeout(() => {
+    $('#photo').attr('src', 'img/jv2.jpeg')
+    $('#photo1').attr('src', 'img/jv2.jpeg')
+  }, 1000)
+}
+
 
 function aparecer() {
     if(busca == 0) {
