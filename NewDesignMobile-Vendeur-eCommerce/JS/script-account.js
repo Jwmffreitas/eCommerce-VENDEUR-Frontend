@@ -1,5 +1,6 @@
 var x = 0
 var y = 0
+var z = 0
 
 function mostrarPedidos() {
     if(x == 0) {
@@ -15,6 +16,20 @@ function mostrarPedidos() {
         document.getElementById('oChat').style.marginTop = "-20px"
         x = 0
     }
+}
+
+function mostrarChats() {
+  if(z == 0) {
+    document.getElementById('setaC').style.transform = "rotate(360deg)"
+    document.getElementById('setaC').style.left = "-10px"
+    $('#chats').slideDown(900)
+    z = 1
+  }else {
+    document.getElementById('setaC').style.transform = "rotate(270deg)"
+    document.getElementById('setaC').style.left = "0px"
+    $('#chats').slideUp(500)
+    z = 0
+  }
 }
 
 function abrirFoto() {
