@@ -6,11 +6,13 @@ function mostrarPedidos() {
         document.getElementById('seta').style.transform = "rotate(360deg)"
         document.getElementById('seta').style.left = "-10px"
         $('#pedidos').slideDown(900)
+        document.getElementById('oChat').style.marginTop = "10px"
         x = 1
     }else {
         document.getElementById('seta').style.transform = "rotate(270deg)"
         document.getElementById('seta').style.left = "0px"
         $('#pedidos').slideUp(500)
+        document.getElementById('oChat').style.marginTop = "-20px"
         x = 0
     }
 }
