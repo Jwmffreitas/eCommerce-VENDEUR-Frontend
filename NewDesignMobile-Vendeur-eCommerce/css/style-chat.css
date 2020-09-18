@@ -38,10 +38,12 @@ header div {
     background-color: white;
     border-radius: 10px;
     box-shadow: gray 3px 5px 10px;
-    text-align: right;
+    text-align: left;
     padding: 5px;
+    padding-left: 10px;
     padding-right: 10px;
     margin-right: 10px;
+    word-wrap: break-word;
 }
 
 footer {
