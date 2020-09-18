@@ -26,9 +26,12 @@ function abrirFoto() {
         document.getElementById('modal').style.display = "none"
         document.getElementById('foto').style.display ="none" 
         y = 0
-        $('#photo').attr("src", document.getElementById('file').value)
     }
 }
+
+/* function enviarFoto() {
+  $('#photo').attr("src", document.getElementById('file').files[0].name)
+} */
 
 function aparecer() {
     if(busca == 0) {
