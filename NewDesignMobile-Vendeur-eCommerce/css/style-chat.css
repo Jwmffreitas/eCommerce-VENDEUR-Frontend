@@ -27,12 +27,21 @@ header div {
 
 .mensagem {
     width: 100%;
-    background-color: #e9d7ad;
+    display: grid;
+    justify-items: right;
+    margin-bottom: 10px;
 }
 
-.balao {
-    width: 60%;
-    background-color: #e9d7ad;
+.balaoU {
+    min-width: 60px;
+    max-width: 300px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: gray 3px 5px 10px;
+    text-align: right;
+    padding: 5px;
+    padding-right: 10px;
+    margin-right: 10px;
 }
 
 footer {
