@@ -26,6 +26,7 @@ function abrirFoto() {
         document.getElementById('modal').style.display = "none"
         document.getElementById('foto').style.display ="none" 
         y = 0
+        $('#photo').attr("src", document.getElementById('file').value)
     }
 }
 
