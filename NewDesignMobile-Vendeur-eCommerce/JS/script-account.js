@@ -5,12 +5,12 @@ function mostrarPedidos() {
     if(x == 0) {
         document.getElementById('seta').style.transform = "rotate(360deg)"
         document.getElementById('seta').style.left = "-10px"
-        document.getElementById('pedidos').style.display = "grid"
+        $('#pedidos').slideDown(900)
         x = 1
     }else {
         document.getElementById('seta').style.transform = "rotate(270deg)"
         document.getElementById('seta').style.left = "0px"
-        document.getElementById('pedidos').style.display = "none"
+        $('#pedidos').slideUp(500)
         x = 0
     }
 }
