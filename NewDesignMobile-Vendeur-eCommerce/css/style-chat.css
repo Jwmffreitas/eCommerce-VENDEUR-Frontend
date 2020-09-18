@@ -22,7 +22,17 @@ header div {
 .chat {
     background-image: linear-gradient(to bottom, #F3E9D3, white);
     background-repeat: no-repeat;
-    height: 100vh;
+    height: 100%;
+}
+
+.mensagem {
+    width: 100%;
+    background-color: #e9d7ad;
+}
+
+.balao {
+    width: 60%;
+    background-color: #e9d7ad;
 }
 
 footer {
