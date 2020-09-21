@@ -1,3 +1,14 @@
+function Mensagem() {
+    var mnsgm = document.getElementById('mensagem')
+    mnsgm.addEventListener('keyup', function(e) {
+        if(e.keyCode === 13) {
+            e.preventDefault()
+            console.log('enviar')
+        }
+    })
+}
+
+
 
 function enviarMensagem() {
     mensagem = document.getElementById('mensagem').value
