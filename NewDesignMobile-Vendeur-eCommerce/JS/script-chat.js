@@ -1,9 +1,9 @@
 function Mensagem() {
     var mnsgm = document.getElementById('mensagem')
     mnsgm.addEventListener('keyup', function(e) {
-        if(e.keyCode === 13) {
+        if(e.key === 'Enter') {
             e.preventDefault()
-            console.log('enviar')
+            enviarMensagem()
         }
     })
 }
