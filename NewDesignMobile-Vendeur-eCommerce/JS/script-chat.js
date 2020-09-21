@@ -14,6 +14,6 @@ function enviarMensagem() {
     </div>`
     document.getElementById('mensagem').value = ""
     }else {
-
+        
     }
 }
