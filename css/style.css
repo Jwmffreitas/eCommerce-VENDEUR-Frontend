@@ -48,6 +48,21 @@ header {
     position: fixed;
 }
 
+.destaques {
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.p-destaque {
+   width: 500px;
+   border-radius: 10px;
+   padding-left: 20px;
+   background-color: white; 
+}
+
 img {
     width: 70px;
     margin: 5px;
