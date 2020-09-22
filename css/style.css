@@ -19,27 +19,9 @@ header {
     top: 0;
 }
 
-@media(min-width: 799px) and (max-width: 801px) {
-    #menu img {
-        margin-left: 35px;
-    }
-}
-
-@media(min-width: 801px) {
-    #menu img {
-        margin-left: 10px;
-    }
-}
-
 .vendeur {
-    display: none;
+    display: inline;
     font-family: Helvetica;
-}
-
-@media(min-width: 900px) {
-    .vendeur {
-        display: inline;
-    }
 }
 
 .pesquisa {
@@ -54,12 +36,6 @@ header {
     border-radius: 5px;
     text-decoration: none;
     padding: 3px;
-}
-
-@media (min-width: 1000px) {
-    .pesquisa input {
-        width: 40%;
-    }
 }
 
 .modal {
