@@ -51,6 +51,7 @@ header {
 
 .destaques {
     margin-top: 20px;
+    padding: 0;
     width: 100%;
     display: flex;
     align-items: center;
@@ -59,6 +60,8 @@ header {
 
 .p-destaque {
    width: 600px;
+   margin-left: 25px;
+   margin-right: 25px;
    display: flex;
    border-radius: 20px;
    padding: 5px;
@@ -66,6 +69,13 @@ header {
    background-color: white;
    box-shadow: rgb(155, 154, 154) 0px 0px 10px 0px; 
 }
+
+.p-destaque h4 {
+    width: 350px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+ }
 
 .p-destaque p {
     color: gray;
