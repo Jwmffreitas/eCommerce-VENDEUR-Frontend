@@ -52,8 +52,9 @@ header {
 
 .destaques {
     margin-top: 20px;
+    position: relative;
     padding: 0;
-    width: 100%;
+    width: 100vw;
     height: 230px;
     display: flex;
     align-items: center;
@@ -99,6 +100,12 @@ a {
     float: right;
 }
 
+.aliancas {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
 .titulo {
     margin-top: 5px;
     display: flex;
@@ -130,6 +137,7 @@ a {
     padding-bottom: 15px;
     margin-left: 18px;
     margin-right: 18px;
+    margin-bottom: 15px;
 }
 
 .card-prod p{
@@ -166,4 +174,13 @@ a {
 .card-prod img {
     width: 150px;
     height: 130px;
+}
+
+.vB {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    width: 1100px;
+    margin-bottom: 20px;
 }
