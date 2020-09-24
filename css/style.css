@@ -109,3 +109,54 @@ a {
     margin-left: 10px;
     margin-right: 10px;
 }
+
+.vB {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-prod {
+    background-color: white;
+    border-radius: 20px;
+    width: 220px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.card-prod p{
+    font-family: Helvetica;
+    font-size: 14px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 180px;
+    margin: 0;
+    margin-top: 25px;
+    margin-bottom: -3px;
+}
+
+.card-prod  h6{
+    font-family: Helvetica;
+    white-space: nowrap;
+    color: gray;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 180px;
+    margin: 0;
+    margin-bottom: -3px;
+}
+
+.card-prod  h4{
+    font-family: Helvetica;
+    font-size: 25px;
+    white-space: nowrap;
+    color: black;
+    margin: 0;
+}
+
+.card-prod img {
+    width: 130px;
+}
