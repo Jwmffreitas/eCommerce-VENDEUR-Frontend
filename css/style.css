@@ -95,3 +95,17 @@ a {
     margin-top: 10px;
     float: right;
 }
+
+.titulo {
+    margin-top: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #7B7B14;
+}
+
+.titulo h2 {
+    font-family: Helvetica;
+    margin-left: 10px;
+    margin-right: 10px;
+}
