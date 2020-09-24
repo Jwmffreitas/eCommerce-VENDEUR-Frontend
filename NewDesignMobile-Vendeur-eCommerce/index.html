@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VENDEUR eCommerce</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="JS/script.js"></script>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <script src="https://kit.fontawesome.com/35cfca1e90.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body onload="pesquisar()">   
+    <header>
+        <table width="100%" id="menu">
+            <tr>
+                <td align="left" style="width: 20%;">
+                   <img src="img/logomaior-134x128.png"> <span class="vendeur" style="margin-left: 10px;">VENDEUR</span>
+                </td>
+                <td align="center" style="font-size: 20px; width: 60%; font-family: Helvetica;">
+                    JOALHERIA VENDEUR
+                </td>
+            </tr>
+        </table>
+    </header>
+    <section style="margin-bottom: -10px;">
+        <div class="destaque">
+            <a href="produto.html"><div class="box-destaque">
+                <h2 style="font-family: Helvetica;">Destaque</h2>
+                <img src="img/alianca.png" style="width: 150px;">
+                <!--<h5 style="font-size: 16px;">ALIANCA OA COM FIO OB 2 BRIL</h5>-->
+            </div></a>
+        </div>
+    </section>
+    <section>
+        <div class="categorias" style="width: 100%; margin-bottom:-3px;">
+            <h4 style="font-family: Helvetica; margin-top: 3pxpx;">Categorias</h4>
+            <div class="carrossel">
+                <div class="box-categoria">
+                    <div style="width: 60px; height: 60px; box-shadow: gray 0px 0px 3px; background-color: white; border-radius: 100%; margin: 5px; display: grid; justify-content: center; align-items: center;">
+                        <a href="#test"><img src="img/aliancas-de-casamento.png" alt=""></a>
+                    </div>
+                    <h6 style="margin: 0; font-family: Helvetica;">Alianças</h6>
+                </div>
+                <div class="box-categoria">
+                    <div style="width: 60px; height: 60px; box-shadow: gray 0px 0px 3px; background-color: white; border-radius: 100%; margin: 5px; display: grid; justify-content: center; align-items: center;">
+                        <a href="#test"><img src="img/joalheria.png" alt=""></a>
+                    </div>
+                    <h6 style="margin: 0; font-family: Helvetica;">Aneis</h6>
+                </div>
+                <div class="box-categoria">
+                    <div style="width: 60px; height: 60px; box-shadow: gray 0px 0px 3px; background-color: white; border-radius: 100%; margin: 5px; display: grid; justify-content: center; align-items: center;">
+                        <a href="#test"><img src="img/joia.png" alt=""></a>
+                    </div>
+                    <h6 style="margin: 0; font-family: Helvetica;">Brincos</h6>
+                </div>
+                <div class="box-categoria">
+                    <div style="width: 60px; height: 60px; box-shadow: gray 0px 0px 3px; background-color: white; border-radius: 100%; margin: 5px; display: grid; justify-content: center; align-items: center;">
+                        <a href="#test"><img src="img/colares.png" alt=""></a>
+                    </div>
+                    <h6 style="margin: 0; font-family: Helvetica;">Colares</h6>
+                </div>
+                <div class="box-categoria">
+                    <div style="width: 60px; height: 60px; box-shadow: gray 0px 0px 3px; background-color: white; border-radius: 100%; margin: 5px; display: grid; justify-content: center; align-items: center;">
+                        <a href="#test"><img src="img/relogio-inteligente.png" alt=""></a>
+                    </div>
+                    <h6 style="margin: 0; font-family: Helvetica;">Outros</h6>
+                </div>
+            </div>
+            <div style="width: 100%; display: flex; align-items: center; justify-content: center;">
+                <div style="width: 80%; border-bottom: 1px solid silver;">&emsp;</div>
+            </div>
+        </div>
+    </section>
+    <section style="height: 100%; margin-bottom: -10px; background-color: #ffffff;" id="test">
+        <div class="recomendado" id="recomendado">
+            <i class="fa fa-exchange" onclick="trocar(vcorpo)" aria-hidden="true" style="position: absolute; top: 0px; right: 20px; font-size: 1.5rem; color: black; transform: rotate(90deg);"></i>
+            <h3 style="margin-top: 0; margin-left: 5px; font-family: Helvetica; color: gray;"></h3>
+            <div class="produto">
+                <div class="caixa-produto">
+                    <img id="image" src="img/colar.png" style="width: 100px; height: auto;">
+                </div>
+                <div>
+                    <h4 style="position: relative; top: -15px;">Colar pingente</h4>
+                    <p style="position: relative; top: -25px; color: gray;">Ouro ping diam...</p>
+                    <img src="img/5star.png" style="width: 80px; position: relative; top: -25px; margin: 0;">
+                    <h4 style="position: relative; top: -35px; margin: 0;">R$ 4.320,00</h4>
+                    <button class="w3-button w3-black" style="position: relative; top: -35px; border-radius: 15px; outline: 0; font-size: 10px; height: 25px; padding: 0; padding-left: 10px; padding-right: 10px;" onclick="addItem()">Add to cart</button>
+                </div>
+            </div>
+            <div class="produto">
+                <div class="caixa-produto">
+                    <img id="image" src="img/casal.png" style="width: 100px; height: auto;">
+                </div>
+                <div>
+                    <h4 style="position: relative; top: -15px;">Aliança Casal</h4>
+                    <p style="position: relative; top: -25px; color: gray;">Alianc ouro...</p>
+                    <img src="img/5star.png" style="width: 80px; position: relative; top: -25px; margin: 0;">
+                    <h4 style="position: relative; top: -35px; margin: 0;">R$ 1.220,00</h4>
+                    <button class="w3-button w3-black" style="position: relative; top: -35px; border-radius: 15px; outline: 0; font-size: 10px; height: 25px; padding: 0; padding-left: 10px; padding-right: 10px;" onclick="addItem()">Add to cart</button>
+                </div>
+            </div>
+            <div class="produto">
+                <div class="caixa-produto">
+                    <img id="image" src="img/brinco.png" style="width: 100px; height: auto;">
+                </div>
+                <div>
+                    <h4 style="position: relative; top: -15px;">Pulseira Gemstone</h4>
+                    <p style="position: relative; top: -25px; color: gray;">Puls Gem Prec...</p>
+                    <img src="img/5star.png" style="width: 80px; position: relative; top: -25px; margin: 0;">
+                    <h4 style="position: relative; top: -35px; margin: 0;">R$ 8.612,00</h4>
+                    <button class="w3-button w3-black" style="position: relative; top: -35px; border-radius: 15px; outline: 0; font-size: 10px; height: 25px; padding: 0; padding-left: 10px; padding-right: 10px;" onclick="addItem()">Add to cart</button>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+    <div class="modal" id="modal"> </div>
+    <footer style="background-color: white; height: 70px;"></footer>
+        <div class="rodape" id="rodape">
+            <div class="menu">
+                <a href="index.html"><i class="fas fa-home" style="color: #c9a146;"></i></a>
+                <a href="cart.html"><i class="fas fa-shopping-cart" style="color: gray;"><span id="qntdd">0</span></i></a>
+                <i class="fas fa-search" id="s" onclick="aparecer()" style="color: gray;"></i>
+                <a href="account.html"><i class="fas fa-user-circle" style="color: gray;"></i></a>
+            </div>
+        </div>
+        <div id="busca">
+            <div id="pesquisa">
+                <input type="text" id="search"> <i class="fas fa-search" id="btn-srch" onclick="p(search.value)"></i>
+            </div>
+        </div>
+</body>
+</html>

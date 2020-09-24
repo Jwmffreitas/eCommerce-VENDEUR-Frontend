@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Carrinho</title>
+        <link rel="stylesheet" href="css/style-cart.css">
+        <script src="JS/script.js"></script>
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <script src="https://kit.fontawesome.com/35cfca1e90.js" crossorigin="anonymous"></script>
+    </head>
+    <body onload="pesquisar()">
+
+        <section class="header">
+            <div>
+                <img src="img/logomaior-134x128.png">
+            </div>
+        </section>
+        <section class="carrinho">
+            <div class="box">
+                <div style="position: absolute;">
+                    <i class="fas fa-shopping-cart"></i>
+                </div>
+                <h5 style="margin-bottom: 0px;">Total:</h5>
+                <h3 style="margin-top: 0px;">R$ 4.320,00</h3>
+                <div style="display:flex;justify-content: center; width:100%;">
+                    <button class="w3-button w3-black" style="border-radius: 10px; height: 35px; padding: 0; padding-left: 10px; padding-right: 10px; margin-top: 10px; margin-bottom: 10px; width: 90%;" onclick="FechaCompra()"><i class="fas fa-shopping-bag"></i>&emsp;Fazer Pedido</button>
+               </div>
+            </div>
+
+            <div class="box-produto">
+                <i style="position: absolute; right: 10px; font-size: 20px; top: 0;" class="fas fa-bookmark"></i>
+                <div style="display: flex;">
+                    <div>
+                        <img src="img/colar.png" alt="">
+                    </div>
+                    <div style="margin-left: 10px;">
+                        <h4 class="titulo" style="margin-top: 0; margin-bottom: 0;">Colar pingente</h4>
+                        <p style="margin-top: 5px; color: gray; font-size: 13px;">Ouro ping diamante pescoço...</p>
+                    </div>
+                </div>
+                <div style="margin-left: 10px; margin-top: 0px; display: flex; height: 30px;">
+                    <i class="fas fa-trash" style="position: absolute; top: 93px; font-size: 16px;"><span style="font-family: helvetica;"> Remover</span></i>
+                    <h4 style="margin-top: 0; margin-bottom: 0; margin-left: 170px;">R$ 4.320,00</h4>
+                </div>
+            </div>
+        </section>
+        
+        <!--<footer style="background-color: white; height: 70px;"></footer> // CASO ADICIONE MAIS ITENS, COLOCAR O "footer" PARA O MENU NÃO TAMPAR O PRODUTO-->
+            <div class="rodape" id="rodape">
+                <div class="menu">
+                    <a href="index.html"><i class="fas fa-home" style="color: gray;"></i></a>
+                    <a href="cart.html"><i class="fas fa-shopping-cart" style="color: #c9a146;"><span id="qntdd">0</span></i></a>
+                    <i class="fas fa-search" id="s" onclick="aparecer()" style="color: gray;"></i>
+                    <a href="account.html"><i class="fas fa-user-circle" style="color: gray;"></i></a>
+                </div>
+            </div>
+            <div id="busca">
+                <div id="pesquisa">
+                    <input type="text" id="search"> <i class="fas fa-search" id="btn-srch" onclick="p(search.value)"></i>
+                </div>
+            </div>
+    </body>
+</html>

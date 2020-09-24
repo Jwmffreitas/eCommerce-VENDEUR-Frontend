@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produto</title>
+    <link rel="stylesheet" href="css/style-produto.css">
+    <script src="JS/script.js"></script>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <script src="https://kit.fontawesome.com/35cfca1e90.js" crossorigin="anonymous"></script>
+</head>
+<body onload="pesquisar()">
+
+    <header>
+        <img src="img/logomaior-134x128.png">
+    </header>
+
+    <section class="produto">
+        <div class="prod">
+            <img src="img/alianca.png" alt="">
+        </div>
+        <div class="desc">
+            <h5 style="margin-bottom: 0;">ALIANCA OA COM FIO OB 2 BRIL</h5>
+            <img src="img/5star.png" style="width: 80px; margin: 0;">
+            <p style="margin-top: 10px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, aspernatur nam maiores expedita cumque, voluptatem eligendi magni recusandae quae illum harum minus sed. Ipsa, illum! Cupiditate aliquid a maxime rem?</p>
+            <div class="desc-prec">
+                <h4 style="font-size: 25px; width: 50%;">R$ 1.220,00</h4>
+                <button class="w3-button w3-black" style="width: 50%; border-radius: 10px; height: 35px; padding: 0; padding-left: 10px; padding-right: 10px; margin-top: 10px; margin-bottom: 10px;" onclick="addItem()">Add to cart</button>
+            </div>
+            <button class="w3-button w3-white" style="width: 100%; border-radius: 10px; box-shadow: gray 0px 3px 8px;"><i class="fas fa-cube" style="font-size: 18px;"></i>&emsp;<span style="font-family: helvetica;">Visualizar em 3D</span></button>
+        </div>
+
+        <div class="recomendado">
+            <h3 style="font-family: Helvetica;">Semelhantes</h3>
+            <div class="carrosel">
+                <div style="width: 125px; box-shadow: gray 0px 0px 5px; border-radius: 10px; margin: 10px; padding-right: 5px; padding-left: 5px;">
+                    <div style="height: 118px;">
+                        <img src="img/Noivado.png" style="margin-bottom: 0;">
+                    </div>
+                    <h5 style="margin: 0; margin-bottom: 5px;">Anel Noivado</h5>
+                </div>
+                <div style="width: 125px; box-shadow: gray 0px 0px 5px; border-radius: 10px; margin: 10px; padding-right: 5px; padding-left: 5px;">
+                    <div style="height: 118px;">
+                        <img src="img/AB.png" style="margin-bottom: 0;">
+                    </div>
+                    <h5 style="margin: 0; margin-bottom: 5px;">AB Pedras Preciosa</h5>
+                </div>
+                <div style="width: 125px; box-shadow: gray 0px 0px 5px; border-radius: 10px; margin: 10px; padding-right: 5px; padding-left: 5px;">
+                    <div style="height: 118px;">
+                        <img src="img/Aliança.png" style="margin-bottom: 0;">
+                    </div>
+                    <h5 style="margin: 0; margin-bottom: 5px;">Aliança pedra grande</h5>
+                </div>
+                <div style="width: 125px; box-shadow: gray 0px 0px 5px; border-radius: 10px; margin: 10px; padding-right: 5px; padding-left: 5px;">
+                    <div style="height: 118px;">
+                        <img src="img/casal.png" style="margin-bottom: 0;">
+                    </div>
+                    <h5 style="margin: 0; margin-bottom: 5px;">Aliança Casal</h5>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer style="background-color: white; height: 70px;"></footer>
+        <div class="rodape" id="rodape">
+            <div class="menu">
+                <a href="index.html"><i class="fas fa-home" style="color: gray;"></i></a>
+                <a href="cart.html"><i class="fas fa-shopping-cart" style="color: gray;"><span id="qntdd">0</span></i></a>
+                <i class="fas fa-search" id="s" onclick="aparecer()" style="color: gray;"></i>
+                <a href="account.html"><i class="fas fa-user-circle" style="color: gray;"></i></a>
+            </div>
+        </div>
+        <div id="busca">
+            <div id="pesquisa">
+                <input type="text" id="search"> <i class="fas fa-search" id="btn-srch" onclick="p(search.value)"></i>
+            </div>
+        </div>
+</body>
+</html>

@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    background-color: white;
+    height: 100%;
+}
+
+header {
+    padding: 10px;
+    background-image: linear-gradient(to bottom, #e9d7ad, #F3E9D3);
+}
+
+header div {
+    display: flex;
+}
+
+.chat {
+    position: relative;
+    top: -1px;
+    padding-top: 1px;
+    background-image: linear-gradient(to bottom, #F3E9D3, white);
+    background-repeat: no-repeat;
+    height: 100%;
+}
+
+.mensagem {
+    width: 100%;
+    display: grid;
+    justify-items: right;
+    margin-bottom: 10px;
+}
+
+.balaoU {
+    min-width: 60px;
+    max-width: 300px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: gray 3px 5px 10px;
+    text-align: left;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-right: 10px;
+    word-wrap: normal;
+}
+
+.mensagemL {
+    width: 100%;
+    display: grid;
+    justify-items: left;
+    margin-bottom: 10px;
+}
+
+.balaoL {
+    min-width: 60px;
+    max-width: 300px;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    box-shadow: gray 3px 5px 10px;
+    text-align: left;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: 10px;
+    word-wrap: normal;
+}
+
+footer {
+    position: fixed;
+    bottom: 2px;
+}
+
+footer div {
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10px;
+}
