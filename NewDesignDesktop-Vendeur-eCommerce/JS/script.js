@@ -1,3 +1,4 @@
+var limite = 0
 Mostrou = 0
 
 function Mostrar(categoria, botao, secao) {

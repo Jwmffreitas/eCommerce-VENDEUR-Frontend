@@ -14,28 +14,33 @@
     <script>
         $( function() {
 
-            limite = $('.p-destaque').length * $('.p-destaque').width() * -1
+            limite = $('.destaques').width() 
 
             //$('#janela').append('<img>')
             //$('#janela img:last').attr('src', 'imagens/foto1.jpg')
 
-                setInterval(moverFotos, 2000)
+                setTimeout(moverFotos, 2000)
         });
-        
-        var limite = 0
+    
 
     function moverFotos(){
     $('.p-destaque').animate({left: "-=" + $('.p-destaque').width()}, 500, function(e) {
-        console.log($('#p0').position().left)
-        console.log($('#p1').position().left)
-        var p = $('#p2').position().left
+        //console.log($('#p1').position().left)
+        //console.log($('#p2').position().left)
         var quantidade = $('.p-destaque').length
         //console.log(dX + 1)
+        var dX = 1
 
-        for(var dX = 0; dX < quantidade; dX++ ){
-            if($('#p' + dX).position().left <= limite) {
-                $('#p' + dX).css('left', 200)
-            }
+        for(var dX = 1; dX <= quantidade; dX++ ){
+            if(dX == 1) {
+                    //$('.destaques').append($('#p' + dX).html)
+                    //$('#p' + dX).remove()
+                    $('#p' + dX).css('left', 650*2+45)
+                    $('#p' + dX).attr('id','p' + quantidade)
+                }else {
+                    //$('#p' + dX).remove()
+                    $('#p' + dX).attr('id','p' + (dX - 1))
+                }
         }
 
         /*if($('#p' + dX + 1).position().left <= limite) {
@@ -73,7 +78,7 @@
         </table>
     </header>
     <section class="destaques">
-        <div class="p-destaque" id="p0">
+        <div class="p-destaque" id="p1">
             <div style="width: 70%;">
                 <h4 style="font-family: helvetica;">COLAR OA CORACAO</h4>
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae ipsam error ipsum laboriosam dolor, aliquam cupiditate quo itaque voluptas at corrupti iure quaerat. Officia quod autem dicta debitis eum eveniet?</p>
@@ -83,7 +88,7 @@
                 <img style="width: 200px; height: 160px;" src="img/colar.png" alt="">
             </div>
         </div>
-        <div class="p-destaque" id="p1">
+        <div class="p-destaque" id="p2">
             <div style="width: 70%;">
                 <h4 style="font-family: helvetica;">ALIANCA OA COM FIO OB 2 BRIL</h4>
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae ipsam error ipsum laboriosam dolor, aliquam cupiditate quo itaque voluptas at corrupti iure quaerat. Officia quod autem dicta debitis eum eveniet?</p>
@@ -93,7 +98,7 @@
                 <img style="width: 200px; height: 160px;" src="img/alianca.png" alt="">
             </div>
         </div>
-        <div class="p-destaque" id="p2">
+        <div class="p-destaque" id="p3">
             <div style="width: 70%;">
                 <h4 style="font-family: helvetica;">PULSEIRA GEMSTONE PEDRA PRECIOSA</h4>
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae ipsam error ipsum laboriosam dolor, aliquam cupiditate quo itaque voluptas at corrupti iure quaerat. Officia quod autem dicta debitis eum eveniet?</p>
