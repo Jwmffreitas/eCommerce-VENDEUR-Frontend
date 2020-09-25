@@ -266,3 +266,20 @@ a {
     width: 1100px;
     margin-bottom: 20px;
 }
+
+footer {
+    background-image: linear-gradient(to bottom, #F3E9D3, white);
+    width: 100%;
+    padding: 10px;
+}
+
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer i {
+    font-size: 30px;
+    margin: 5px;
+}
