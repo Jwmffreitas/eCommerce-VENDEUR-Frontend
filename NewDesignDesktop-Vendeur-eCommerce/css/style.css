@@ -133,6 +133,7 @@ a {
 .titulo {
     position: relative;
     margin-top: 5px;
+    width: 1100px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -232,6 +233,19 @@ a {
 }
 
 .vD {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    width: 1100px;
+    margin-bottom: 20px;
+}
+
+.vAE {
+    display: none;
+}
+
+.vE {
     display: flex;
     flex-flow: row wrap;
     align-items: center;
