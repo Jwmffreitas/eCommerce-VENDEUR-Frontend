@@ -112,6 +112,24 @@ a {
     justify-content: center;
 }
 
+.brincos {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
+.colares {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
+.outros {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
 .titulo {
     position: relative;
     margin-top: 5px;
