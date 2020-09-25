@@ -146,14 +146,6 @@ a {
     margin-right: 10px;
 }
 
-.vA {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 0px;
-    height: 300px;
-}
-
 .card-prod {
     background-color: white;
     border-radius: 20px;
@@ -171,9 +163,9 @@ a {
 }
 
 .card-prod:hover {
+    transform: scale(1.1);
     transition: height 300ms;
     height: 320px;
-    transform: scale(1.1);
     box-shadow: gray 0px 0px 10px;
 }
 
@@ -213,6 +205,14 @@ a {
     height: 130px;
 }
 
+.vA {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0px;
+    height: 300px;
+}
+
 .vAB {
     display: none;
 }
@@ -223,7 +223,7 @@ a {
     align-items: center;
     justify-content: center;
     width: 1100px;
-    margin-bottom: 20px;
+    margin-bottom: 0px;
 }
 
 .vAC {
