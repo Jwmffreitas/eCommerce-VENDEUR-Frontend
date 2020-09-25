@@ -106,6 +106,12 @@ a {
     justify-content: center;
 }
 
+.aneis {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
 .titulo {
     position: relative;
     margin-top: 5px;
