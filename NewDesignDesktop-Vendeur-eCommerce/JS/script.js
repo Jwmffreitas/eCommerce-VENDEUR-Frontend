@@ -2,7 +2,7 @@ x = 0
 
 function mostrarAliancas() {
     if(x == 0) {
-        $('.vAB').slideDown(600, function() {
+        $('.vAB').slideDown(500, function() {
             //$('.vB').css('display', 'flex')
             $('.open').append('<i>')
             $('.open i:first').attr('class', 'fas fa-times')
