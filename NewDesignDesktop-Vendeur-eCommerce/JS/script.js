@@ -1,6 +1,6 @@
 Mostrou = 0
 
-function Mostrar(categoria, botao) {
+function Mostrar(categoria, botao, secao) {
     if(Mostrou == 0){
         $(categoria).slideDown(500, function() {
             $(botao).removeClass('fas fa-angle-down')
@@ -14,4 +14,8 @@ function Mostrar(categoria, botao) {
         })
         Mostrou = 0
     }
+}
+
+function rodarDestaque() {
+
 }
