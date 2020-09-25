@@ -176,8 +176,12 @@ a {
     height: 130px;
 }
 
-.vB {
+.vAB {
     display: none;
+}
+
+.vB {
+    display: flex;
     flex-flow: row wrap;
     align-items: center;
     justify-content: center;

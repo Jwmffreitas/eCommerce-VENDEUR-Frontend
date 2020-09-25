@@ -2,14 +2,14 @@ x = 0
 
 function mostrarAliancas() {
     if(x == 0) {
-        $('.vB').slideDown(0, function() {
-            $('.vB').css('display', 'flex')
+        $('.vAB').slideDown(600, function() {
+            //$('.vB').css('display', 'flex')
             $('.open').append('<i>')
             $('.open i:first').attr('class', 'fas fa-times')
         })
         x = 1
     }else {
-        $('.vB').slideUp(500)
+        $('.vAB').slideUp(600)
         setTimeout(() => {
             $('.open').append('<i>')
             $('.open i:first').attr('class', 'fas fa-angle-down')
