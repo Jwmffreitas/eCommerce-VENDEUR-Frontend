@@ -15,7 +15,3 @@ function Mostrar(categoria, botao, secao) {
         Mostrou = 0
     }
 }
-
-function rodarDestaque() {
-
-}
