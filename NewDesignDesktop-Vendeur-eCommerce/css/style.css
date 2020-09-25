@@ -91,7 +91,7 @@ header {
  }
 
 img {
-    width: 70px;
+    width: 60px;
     margin: 5px;
 }
 
@@ -107,6 +107,7 @@ a {
 }
 
 .titulo {
+    position: relative;
     margin-top: 5px;
     display: flex;
     justify-content: center;
