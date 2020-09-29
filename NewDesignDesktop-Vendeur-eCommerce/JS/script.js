@@ -21,7 +21,7 @@ function Mostrar(categoria, botao) {
 function abrirProduto() {
     if(Produto == 0) {
         document.getElementById('modal').style.display = "grid"
-        $('#p-popup').slideToggle("normal")
+        $('#p-popup').toggle("normal")
     }
 }
 
