@@ -25,8 +25,6 @@
 
     function moverFotos(){
     $('.p-destaque').animate({left: "-=" + $('.p-destaque').width()}, 500, function(e) {
-        //console.log($('#p1').position().left)
-        //console.log($('#p2').position().left)
         var quantidade = $('.p-destaque').length
 
         for(var dX = 1; dX <= quantidade; dX++ ){
@@ -40,18 +38,6 @@
                         //$('#p' + dX).css('left', -650*2-45)
                 }
         }
-
-        /*if($('#p' + dX + 1).position().left <= limite) {
-            $('#p1').css('left', 200)
-        }else if($('#p2').position().left <= limite) {
-            $('#p2').css('left', 0)
-        }else if ($('#p3').position().left <= limite){
-            $('#p3').css('left', 0)
-        }
-        var Se = function() {
-            `if($('#${dX}').position().left <= limite) {
-            $('#${dX}').css('left', 200)}`
-        }*/
     })
 }
     </script>   
