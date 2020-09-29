@@ -25,7 +25,7 @@ function Mostrar(categoria, botao, titulo) {
 
 function abrirProduto() {
     document.getElementById('modal').style.display = "grid"
-    document.getElementById('p-popup').innerHTML = `<div>
+    /*document.getElementById('p-popup').innerHTML = `<div>
     <i class="fas fa-times" onclick="fecharProduto()" style="font-size: 30px; color: white; float: right; margin-right: 10px; margin-top: 5px; margin-bottom: 5px;"></i>
 </div>
 <div id="produto-popup">
@@ -39,14 +39,14 @@ function abrirProduto() {
         <button class="w3-button w3-black w3-round-large" style="width: 200px;"><i class="fas fa-shopping-cart" style="margin-right: 10px; font-size: 18px;"></i>Adicionar ao Carrinho</button>
         <button class="w3-button w3-white w3-round-large" style="width: 200px; margin-top: 5px; box-shadow: #707070 0px 0px 10px;"><i class="fas fa-cube" style="margin-right: 10px; font-size: 18px;"></i>&emsp;Visualizar modelo 3D</button>
     </div>
-</div>`
+</div>`*/
     $('#p-popup').toggle("normal")
 }
 
 function fecharProduto() {
     $('#p-popup').toggle('normal')
-    document.getElementById('p-popup').innerHTML = ``
+    //document.getElementById('p-popup').innerHTML = ``
     setTimeout(() => {
         document.getElementById('modal').style.display = "none"
-    }, 0)
+    }, 500)
 }
