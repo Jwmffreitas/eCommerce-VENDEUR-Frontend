@@ -1,20 +1,25 @@
 var limite = 0
-Mostrou = 0
 Produto = 0
 
-function Mostrar(categoria, botao) {
-    if(Mostrou == 0){
+function Mostrar(categoria, botao, titulo) {
+    var On = $(categoria).attr("name")
+
+    if(On == "oculto"){
         $(categoria).slideDown(500, function() {
             $(botao).removeClass('fas fa-angle-down')
             $(botao).addClass('fas fa-times')
         })
-        Mostrou = 1
-    }else{
+        $(categoria).attr('name', 'mostrou')
+        console.log(On)
+        //location.href = titulo
+        }else{
         $(categoria).slideUp(600, function() {
             $(botao).removeClass('fas fa-times')
             $(botao).addClass('fas fa-angle-down')
         })
-        Mostrou = 0
+        $(categoria).attr('name', 'oculto')
+        console.log(On)
+        //location.href = titulo
     }
 }
 

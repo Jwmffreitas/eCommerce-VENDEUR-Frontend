@@ -11,6 +11,11 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 <body>
+    <style>
+        body {
+            scroll-behavior: smooth;
+        }
+    </style>
     <script>
         $( function() {
 
@@ -94,7 +99,7 @@
         </div>
     </section>
     <div style="width: 100%; display: flex; align-items: center; justify-content: center; margin-top: 40px;"><div style="width: 20%; border-bottom: #707070 1px solid;"></div></div>
-    <section class="aliancas">
+    <section class="aliancas" id="alianca">
         <div class="titulo">
             <i class="far fa-gem" style="font-size: 20px;"></i>
             <h2>Alianças</h2>
@@ -157,7 +162,7 @@
                 </div>
             </div>
         </div>
-        <div class="vAB" id="vAB">
+        <div class="vAB" id="vAB" name="oculto">
             <div class="vB" id="vB">
                 <div class="card-prod">
                     <div style="display: grid; align-items: center; justify-content: center;">
@@ -268,10 +273,11 @@
             </div>
         </div>
         <div style="display: flex; align-items: center; justify-content: center; width: 100%;">
-            <i class="fas fa-angle-down" id="openAL" style="font-size: 40px; color: #7B7B14;" onclick="Mostrar('#vAB', '#openAL', '#vAB')"></i>
+            <i class="fas fa-angle-down" id="openAL" style="font-size: 40px; color: #7B7B14;" onclick="Mostrar('#vAB', '#openAL', '#alianca')"></i>
         </div>
+        <div style="width: 100%; display: flex; align-items: center; justify-content: center; margin-top: 40px;"><div style="width: 20%; border-bottom: #707070 1px solid;"></div></div>
     </section>
-    <section class="aneis">
+    <section class="aneis" id="aneis">
         <div class="titulo">
             <i class="far fa-gem" style="font-size: 20px;"></i>
             <h2>Aneis</h2>
@@ -332,7 +338,7 @@
                 </div>
             </div>
         </div>
-        <div class="vAC" id="vAC">
+        <div class="vAC" id="vAC" name="oculto">
             <div class="vC">
                 <div class="card-prod">
                     <div style="display: grid; align-items: center; justify-content: center;">
@@ -441,10 +447,11 @@
             </div>
         </div>
         <div style="display: flex; align-items: center; justify-content: center; width: 100%;">
-            <i class="fas fa-angle-down" id="openAN" style="font-size: 40px; color: #7B7B14;" onclick="Mostrar('#vAC', '#openAN')"></i>
+            <i class="fas fa-angle-down" id="openAN" style="font-size: 40px; color: #7B7B14;" onclick="Mostrar('#vAC', '#openAN', '#aneis')"></i>
         </div>
+        <div style="width: 100%; display: flex; align-items: center; justify-content: center; margin-top: 40px;"><div style="width: 20%; border-bottom: #707070 1px solid;"></div></div>
     </section>
-    <section class="brincos">
+    <section class="brincos" id="brincos">
         <div class="titulo">
             <i class="far fa-gem" style="font-size: 20px;"></i>
             <h2>Brincos</h2>
@@ -505,7 +512,7 @@
                 </div>
             </div>
         </div>
-        <div class="vAD" id="vAD">
+        <div class="vAD" id="vAD" name="oculto">
             <div class="vD">
                 <div class="card-prod">
                     <div style="display: grid; align-items: center; justify-content: center;">
@@ -614,10 +621,11 @@
             </div>
         </div>
         <div style="display: flex; align-items: center; justify-content: center; width: 100%;">
-            <i class="fas fa-angle-down" id="openB" style="font-size: 40px; color: #7B7B14;" onclick="Mostrar('#vAD', '#openB')"></i>
+            <i class="fas fa-angle-down" id="openB" style="font-size: 40px; color: #7B7B14;" onclick="Mostrar('#vAD', '#openB', '#brincos')"></i>
         </div>
+        <div style="width: 100%; display: flex; align-items: center; justify-content: center; margin-top: 40px;"><div style="width: 20%; border-bottom: #707070 1px solid;"></div></div>
     </section>
-    <section class="colares">
+    <section class="colares" id="colares">
         <div class="titulo">
             <i class="far fa-gem" style="font-size: 20px;"></i>
             <h2>Colares</h2>
@@ -678,7 +686,7 @@
                 </div>
             </div>
         </div>
-        <div class="vAE" id="vAE">
+        <div class="vAE" id="vAE" name="oculto">
             <div class="vE">
                 <div class="card-prod">
                     <div style="display: grid; align-items: center; justify-content: center;">
@@ -696,10 +704,11 @@
             </div>
         </div>
         <div style="display: flex; align-items: center; justify-content: center; width: 100%;">
-            <i class="fas fa-angle-down" id="openC" style="font-size: 40px; color: #7B7B14;" onclick="Mostrar('#vAE', '#openC')"></i>
+            <i class="fas fa-angle-down" id="openC" style="font-size: 40px; color: #7B7B14;" onclick="Mostrar('#vAE', '#openC', '#colares')"></i>
         </div>
+        <div style="width: 100%; display: flex; align-items: center; justify-content: center; margin-top: 40px;"><div style="width: 20%; border-bottom: #707070 1px solid;"></div></div>
     </section>
-    <section class="outros">
+    <section class="outros" id="outros">
         <div class="titulo">
             <i class="far fa-gem" style="font-size: 20px;"></i>
             <h2>Outros</h2>
@@ -742,6 +751,9 @@
                     <h6>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi, rerum ea explicabo officia sed fugit maxime iure minima dignissimos. Obcaecati, vitae officiis. Modi nisi reprehenderit sunt voluptatum, praesentium repellendus distinctio.</h6>
                     <h4>R$ 1.200,00</h4>
                 </div>
+                <div style="margin-top: 15px; display: grid; align-items: center; justify-content: center;">
+                    <button class="w3-button w3-black w3-round-large"><i class="fas fa-shopping-cart" style="margin-right: 5px; font-size: 18px;"></i>Add Carrinho</button>
+                </div>
             </div>
             <div class="card-prod">
                 <div style="display: grid; align-items: center; justify-content: center;">
@@ -757,7 +769,7 @@
                 </div>
             </div>
         </div>
-        <div class="vAF" id="vAF">
+        <div class="vAF" id="vAF" name="oculto">
             <div class="vF">
                 <div class="card-prod">
                     <div style="display: grid; align-items: center; justify-content: center;">
@@ -801,8 +813,9 @@
             </div>
         </div>
         <div style="display: flex; align-items: center; justify-content: center; width: 100%;">
-            <i class="fas fa-angle-down" id="openO" style="font-size: 40px; color: #7B7B14;" onclick="Mostrar('#vAF', '#openO')"></i>
+            <i class="fas fa-angle-down" id="openO" style="font-size: 40px; color: #7B7B14;" onclick="Mostrar('#vAF', '#openO', '#outros')"></i>
         </div>
+        <div style="width: 100%; display: flex; align-items: center; justify-content: center; margin-top: 40px;"><div style="width: 20%; border-bottom: #707070 1px solid;"></div></div>
     </section>
     <div class="modal" id="modal"> 
         <section id="p-popup">
