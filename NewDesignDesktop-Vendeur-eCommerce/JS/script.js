@@ -1,5 +1,6 @@
 var limite = 0
 Mostrou = 0
+Produto = 0
 
 function Mostrar(categoria, botao) {
     if(Mostrou == 0){
@@ -15,4 +16,18 @@ function Mostrar(categoria, botao) {
         })
         Mostrou = 0
     }
+}
+
+function abrirProduto() {
+    if(Produto == 0) {
+        document.getElementById('modal').style.display = "grid"
+        $('#p-popup').toggle("normal")
+    }
+}
+
+function fecharProduto() {
+    $('#p-popup').toggle('normal')
+    setTimeout(() => {
+        document.getElementById('modal').style.display = "none"
+    }, 500)
 }
