@@ -24,15 +24,29 @@ function Mostrar(categoria, botao, titulo) {
 }
 
 function abrirProduto() {
-    if(Produto == 0) {
-        document.getElementById('modal').style.display = "grid"
-        $('#p-popup').toggle("normal")
-    }
+    document.getElementById('modal').style.display = "grid"
+    document.getElementById('p-popup').innerHTML = `<div>
+    <i class="fas fa-times" onclick="fecharProduto()" style="font-size: 30px; color: white; float: right; margin-right: 10px; margin-top: 5px; margin-bottom: 5px;"></i>
+</div>
+<div id="produto-popup">
+    <div style="display: grid; align-items: center; justify-content: center;">
+        <img style="width: 300px;" src="img/colar.png" alt="">
+    </div>
+    <div id="produto">
+        <h3 style="font-family: helvetica;">COLAR OA CORACAO</h3>
+        <p style="font-size: 16px; overflow-y: auto; height: 120px;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae ipsam error ipsum laboriosam dolor, aliquam cupiditate quo itaque voluptas at corrupti iure quaerat. Officia quod autem dicta debitis eum eveniet?</p>
+        <h2 style="color: red; font-family: helvetica;">R$ 1.220,00</h2>
+        <button class="w3-button w3-black w3-round-large" style="width: 200px;"><i class="fas fa-shopping-cart" style="margin-right: 10px; font-size: 18px;"></i>Adicionar ao Carrinho</button>
+        <button class="w3-button w3-white w3-round-large" style="width: 200px; margin-top: 5px; box-shadow: #707070 0px 0px 10px;"><i class="fas fa-cube" style="margin-right: 10px; font-size: 18px;"></i>&emsp;Visualizar modelo 3D</button>
+    </div>
+</div>`
+    $('#p-popup').toggle("normal")
 }
 
 function fecharProduto() {
     $('#p-popup').toggle('normal')
+    document.getElementById('p-popup').innerHTML = ``
     setTimeout(() => {
         document.getElementById('modal').style.display = "none"
-    }, 500)
+    }, 0)
 }

@@ -288,19 +288,18 @@ a {
 }
 
 #produto-popup {
-    background-image: linear-gradient(to bottom, #F3E9D3, white, white);
+    background-color: white;
     border-radius: 20px;
-    width: 1000px;
+    width: 700px;
+    display: flex;
     padding-top: 10px;
 }
 
-#produto {
-    width: 1000px;
+#produto {  
     background-color: white;
     border-radius: 20px;
-    box-shadow: gray 0px 0px 5px;
     position: relative;
-    margin-top: -20px;
+    margin-top: 0px;
     padding-top: 5px;
     padding-left: 15px;
     padding-right: 15px;
@@ -317,6 +316,7 @@ a {
     background: rgba(0,0,0,0.5);
     z-index: 1003;
     position: fixed;
+    backdrop-filter: blur(4px);
 }
 
 footer {
