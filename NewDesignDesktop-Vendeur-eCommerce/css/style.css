@@ -279,6 +279,33 @@ a {
     margin-bottom: 20px;
 }
 
+#p-popup {
+    width: 100%;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    font-family: helvetica;
+}
+
+#produto-popup {
+    background-image: linear-gradient(to bottom, #F3E9D3, white, white);
+    border-radius: 20px;
+    padding-top: 10px;
+}
+
+#produto {
+    width: 1000px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: gray 0px 0px 5px;
+    position: relative;
+    margin-top: -20px;
+    padding-top: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 10px;
+}
+
 footer {
     background-image: linear-gradient(to bottom, #F3E9D3, white);
     width: 100%;
