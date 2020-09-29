@@ -1,7 +1,7 @@
 var limite = 0
 Mostrou = 0
 
-function Mostrar(categoria, botao, secao) {
+function Mostrar(categoria, botao) {
     if(Mostrou == 0){
         $(categoria).slideDown(500, function() {
             $(botao).removeClass('fas fa-angle-down')

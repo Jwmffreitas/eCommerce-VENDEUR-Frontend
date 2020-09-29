@@ -28,8 +28,6 @@
         //console.log($('#p1').position().left)
         //console.log($('#p2').position().left)
         var quantidade = $('.p-destaque').length
-        //console.log(dX + 1)
-        var dX = 1
 
         for(var dX = 1; dX <= quantidade; dX++ ){
             if(dX == 1) {
@@ -38,8 +36,8 @@
                     $('#p' + dX).css('left', 650*2+45)
                     $('#p' + dX).attr('id','p' + quantidade)
                 }else {
-                    //$('#p' + dX).remove()
-                    $('#p' + dX).attr('id','p' + (dX - 1))
+                        $('#p' + dX).attr('id','p' + (dX - 1))
+                        //$('#p' + dX).css('left', -650*2-45)
                 }
         }
 

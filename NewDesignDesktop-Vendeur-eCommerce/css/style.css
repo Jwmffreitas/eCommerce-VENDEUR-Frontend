@@ -157,14 +157,16 @@ a {
     padding-bottom: 15px;
     margin-left: 18px;
     margin-right: 18px;
-    margin-bottom: 15px;
-    transition: 500ms;
+    margin-bottom: 30px;
+    transition: 100ms;
 }
 
 .card-prod:hover {
     transform: scale(1.1);
     transition: height 300ms;
     height: 320px;
+    margin-bottom: -49px;
+    z-index: 1000;
     box-shadow: gray 0px 0px 10px;
 }
 
