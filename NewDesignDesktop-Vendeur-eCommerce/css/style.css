@@ -251,7 +251,6 @@ a {
         justify-content: center;
         margin-bottom: 0px;
         width: 1024px;
-        height: 300px;
     }
 }
 
@@ -286,12 +285,24 @@ a {
 }
 
 .vC {
+    position: relative;
+    margin: 0 auto;
     display: flex;
     flex-flow: row wrap;
     align-items: center;
     justify-content: center;
-    width: 1100px;
-    margin-bottom: 20px;
+    margin-bottom: 0px;
+    width: 600px;
+}
+
+@media(min-width: 1024px) {
+    .vC {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 0px;
+        width: 1024px;
+    }
 }
 
 .vAD {
@@ -299,12 +310,24 @@ a {
 }
 
 .vD {
+    position: relative;
+    margin: 0 auto;
     display: flex;
     flex-flow: row wrap;
     align-items: center;
     justify-content: center;
-    width: 1100px;
-    margin-bottom: 20px;
+    margin-bottom: 0px;
+    width: 600px;
+}
+
+@media(min-width: 1024px) {
+    .vD {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 0px;
+        width: 1024px;
+    }
 }
 
 .vAE {
@@ -312,12 +335,24 @@ a {
 }
 
 .vE {
+    position: relative;
+    margin: 0 auto;
     display: flex;
     flex-flow: row wrap;
     align-items: center;
     justify-content: center;
-    width: 1100px;
-    margin-bottom: 20px;
+    margin-bottom: 0px;
+    width: 600px;
+}
+
+@media(min-width: 1024px) {
+    .vE {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 0px;
+        width: 1024px;
+    }
 }
 
 .vAF {
@@ -325,12 +360,24 @@ a {
 }
 
 .vF {
+    position: relative;
+    margin: 0 auto;
     display: flex;
     flex-flow: row wrap;
     align-items: center;
     justify-content: center;
-    width: 1100px;
-    margin-bottom: 20px;
+    margin-bottom: 0px;
+    width: 600px;
+}
+
+@media(min-width: 1024px) {
+    .vF {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 0px;
+        width: 1024px;
+    }
 }
 
 #p-popup {
