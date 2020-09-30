@@ -29,6 +29,15 @@ header {
 @media(min-width: 1024px) {
     .vendeur {
         display: inline;
+        font-size: 12px;
+        font-family: Helvetica;
+    }
+}
+
+@media(min-width: 1150px) {
+    .vendeur {
+        display: inline;
+        font-size: 15px;
         font-family: Helvetica;
     }
 }
@@ -61,6 +70,12 @@ header {
 }
 
 @media(min-width: 1024px) {
+    .item-menu {
+        font-size: 14px;
+    }
+}
+
+@media(min-width: 1150px) {
     .item-menu {
         font-size: 16px;
     }
