@@ -234,11 +234,25 @@ a {
 }
 
 .vA {
+    position: relative;
+    margin: 0 auto;
     display: flex;
+    flex-flow: row wrap;
     align-items: center;
     justify-content: center;
     margin-bottom: 0px;
-    height: 300px;
+    width: 600px;
+}
+
+@media(min-width: 1024px) {
+    .vA {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 0px;
+        width: 1024px;
+        height: 300px;
+    }
 }
 
 .vAB {
@@ -246,12 +260,25 @@ a {
 }
 
 .vB {
+    position: relative;
+    margin: 0 auto;
     display: flex;
     flex-flow: row wrap;
     align-items: center;
     justify-content: center;
-    width: 1100px;
+    width: 600px;
     margin-bottom: 0px;
+}
+
+@media (min-width: 1024px) {
+    .vB {
+        display: flex;
+        flex-flow: row wrap;
+        align-items: center;
+        justify-content: center;
+        width: 1024px;
+        margin-bottom: 0px;
+    }
 }
 
 .vAC {
