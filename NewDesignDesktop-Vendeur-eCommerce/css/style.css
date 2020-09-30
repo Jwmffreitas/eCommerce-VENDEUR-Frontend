@@ -64,13 +64,14 @@ header {
    width: 600px;
    margin-left: 25px;
    margin-right: 25px;
+   margin-bottom: 25px;
    position: relative;
    display: flex;
    border-radius: 20px;
    padding: 5px;
    padding-left: 20px;
-   background-color: white;
-   box-shadow: rgb(155, 154, 154) 0px 0px 10px 0px; 
+   /*background-color: white;
+   box-shadow: rgb(155, 154, 154) 0px 0px 10px 0px;*/ 
 }
 
 .p-destaque h4 {
