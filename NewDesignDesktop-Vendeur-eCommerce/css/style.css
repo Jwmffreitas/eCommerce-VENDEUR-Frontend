@@ -407,6 +407,8 @@ a {
     background-color: white;
     border-radius: 20px;
     width: 700px;
+    padding-left: 10px;
+    padding-bottom: 10px;
     display: flex;
     padding-top: 10px;
 }
