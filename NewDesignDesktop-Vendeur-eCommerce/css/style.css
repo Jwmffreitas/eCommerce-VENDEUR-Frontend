@@ -446,6 +446,15 @@ footer {
     align-items: center;
     justify-content: center;
 }
+.footer .logo {
+    width: 10%;
+}
+
+@media(min-width: 1000px) {
+    .footer .logo {
+        width: 8%;
+    }
+}
 
 .footer i {
     font-size: 30px;
