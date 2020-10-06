@@ -12,7 +12,6 @@ function ProxInput() {
     num3 = document.getElementById('num3').value
     num4 = document.getElementById('num4').value
 
-    console.log(num1.length)
     if(num1.length == 4) {
         document.getElementById('num1').readOnly = true
         document.getElementById('num2').focus()
@@ -35,4 +34,12 @@ function AntInput() {
     document.getElementById('num2').readOnly = false
     document.getElementById('num3').readOnly = false
     document.getElementById('num4').readOnly = false
+    document.getElementById('cvv').readOnly = false
+}
+
+function CVV() {
+    cvv = document.getElementById('cvv').value
+    if(cvv.length == 3) {
+        document.getElementById('cvv').readOnly = true
+    }
 }
