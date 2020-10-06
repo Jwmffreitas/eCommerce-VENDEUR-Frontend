@@ -115,6 +115,8 @@ header {
 
 .produtos {
     width: 100%;
+    position: relative;
+    min-height: 500px;
     padding-top: 10px;
     padding-left: 30px;
     padding-right: 30px;
@@ -145,6 +147,7 @@ header {
 .produto input {
     font-size: 15px;
     padding:6px;
+    padding-left: 10px;
     border-radius: 20px;
     border: gray solid 1px;
     width: 120px;
@@ -162,6 +165,17 @@ header {
     linear-gradient(to right, transparent 0px, transparent 10px, #000 10px, #000 11px, transparent 11px, transparent 21px);
     transform: rotate(90deg) scale(0.8, 0.9);
     cursor:pointer;
+}
+
+.total {
+    color: #7B7B14;
+    width: 93%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: gray solid 1px;
+    position: absolute;
+    bottom: 0;
 }
 
 .pagamento {
