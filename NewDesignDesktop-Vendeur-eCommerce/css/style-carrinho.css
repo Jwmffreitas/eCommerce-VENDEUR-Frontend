@@ -104,20 +104,41 @@ header {
 .box {
     background-color: white;
     border-radius: 10px;
-    width: 70%;
+    width: 60%;
     padding-left: 10px;
     padding-right: 10px;
     padding-top: 0;
     padding-bottom: 10px;
     display: flex;
-    margin-right: 10px;
+    margin-right: 50px;
+}
+
+.produtos {
+    width: 100%;
+    padding-top: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 5px;
+}
+
+.separacao {
+    width: 100%;
+    display: flex;
+}
+
+.titulo {
+    color: #7B7B14;
+    width: 100%;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    border-bottom: gray solid 1px;
 }
 
 .produto {
     display: flex;
-    justify-content: center;
+    justify-content: left;
     align-items: center;
-    margin-top: 30px;
 }
 
 .pagamento {
