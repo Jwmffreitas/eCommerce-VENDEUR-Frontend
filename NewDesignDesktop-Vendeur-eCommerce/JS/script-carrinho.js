@@ -7,4 +7,32 @@ function verificarNome () {
 }
 
 function ProxInput() {
+    num1 = document.getElementById('num1').value
+    num2 = document.getElementById('num2').value
+    num3 = document.getElementById('num3').value
+    num4 = document.getElementById('num4').value
+
+    console.log(num1.length)
+    if(num1.length == 4) {
+        document.getElementById('num1').readOnly = true
+        document.getElementById('num2').focus()
+        if(num2.length == 4) {
+            document.getElementById('num2').readOnly = true
+            document.getElementById('num3').focus()
+            if(num3.length == 4) {
+                document.getElementById('num3').readOnly = true
+                document.getElementById('num4').focus()
+                if(num4.length == 4) {
+                    document.getElementById('num4').readOnly = true
+                }
+            }
+        }
+    }
+}
+
+function AntInput() {
+    document.getElementById('num1').readOnly = false
+    document.getElementById('num2').readOnly = false
+    document.getElementById('num3').readOnly = false
+    document.getElementById('num4').readOnly = false
 }
