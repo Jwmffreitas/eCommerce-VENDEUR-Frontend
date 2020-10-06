@@ -95,6 +95,7 @@ header {
 
 .carrinho {
     margin-top: 30px;
+    margin-bottom: 40px;
     display: grid;
     padding: 10px;
     align-items: center;
@@ -104,6 +105,7 @@ header {
 @media(min-width: 1360px) {
     .carrinho {
         margin-top: 30px;
+        margin-bottom: 30px;
         display: flex;
         padding: 10px;
         align-items: center;
@@ -267,4 +269,30 @@ input[type=number]::-webkit-outer-spin-button {
     padding: 10px;
     padding-top: 2px;
     padding-bottom: 2px;
+}
+
+footer {
+    background-image: linear-gradient(to bottom, #F3E9D3, white);
+    width: 100%;
+    padding: 10px;
+}
+
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.footer .logo {
+    width: 10%;
+}
+
+@media(min-width: 1000px) {
+    .footer .logo {
+        width: 8%;
+    }
+}
+
+.footer i {
+    font-size: 30px;
+    margin: 5px;
 }
