@@ -86,12 +86,54 @@
                         <option value="Boleto">Boleto</option>
                     </select>
                 </div>
-                <div style="width: 50%;">
+                <div style="width: 50%; text-align: right;">
                     <i class="fas fa-credit-card fa-10x" style="text-shadow: gray 0px 0px 3px;"></i>
                 </div>
             </div>
-            <div>
-                
+            <div class="Dados">
+                <div style="margin-bottom: 30px;">
+                    <p>Nome no cartão:</p>
+                    <input class="w3-input w3-animate-input" id="nome" type="text" style="width:30%; background: none;" oninput="verificarNome()">
+                </div>
+                <div style="margin-bottom: 30px;">
+                    <p>Número do cartão:</p>
+                    <div style="display: flex;">
+                        <input class="w3-input" id="nome" type="number" style="width:100px; background: none; margin-right: 10px; font-size: 18px;">
+                        <input class="w3-input" id="nome" type="number" style="width:100px; background: none; margin-right: 10px; font-size: 18px;">
+                        <input class="w3-input" id="nome" type="number" style="width:100px; background: none; margin-right: 10px; font-size: 18px;">
+                        <input class="w3-input" id="nome" type="number" style="width:100px; background: none; margin-right: 10px; font-size: 18px;">
+                    </div>
+                </div>
+                <div>
+                    <p>Data de expiração:</p>
+                    <div>
+                        <select name="mes" id="mes">
+                            <option value="01">Janeiro</option>
+                            <option value="02">Fevereiro</option>
+                            <option value="03">Março</option>
+                            <option value="04">Abril</option>
+                            <option value="05">Maio</option>
+                            <option value="06">Junho</option>
+                            <option value="07">Julho</option>
+                            <option value="08">Agosto</option>
+                            <option value="09">Setembro</option>
+                            <option value="10">Outubro</option>
+                            <option value="11">Novembro</option>
+                            <option value="12">Dezembro</option>
+                        </select>
+                        <select name="ano" id="ano">
+                            <option value="2020">2021</option>
+                            <option value="2021">2021</option>
+                            <option value="2022">2022</option>
+                            <option value="2023">2023</option>
+                            <option value="2024">2024</option>
+                            <option value="2025">2025</option>
+                        </select>
+                    </div>
+                </div>
+                <div style="width: 100%; display: flex; justify-content: center; align-items: center;">
+                    <button class="w3-button w3-black" style="border-radius: 10px; height: 35px; padding: 0; padding-left: 10px; padding-right: 10px; margin-top: 10px; margin-bottom: 10px; width: 90%; position: relative;"><i class="fas fa-shopping-bag" style="position: absolute; left: 15px; font-size: 18px;"></i>Fechar Pedido</button>
+                </div>
             </div>
         </div> 
     </section>

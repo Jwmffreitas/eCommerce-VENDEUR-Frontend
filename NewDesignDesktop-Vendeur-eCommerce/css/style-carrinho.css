@@ -184,6 +184,7 @@ header {
     min-height: 500px;
     padding: 5px;
     padding-left: 20px;
+    padding-right: 20px;
     border-radius: 20px;
     box-shadow: rgb(185, 185, 185) 0px 2px 10px;
 }
@@ -191,6 +192,7 @@ header {
 .formaPag {
     display: flex;
     align-items: center;
+    margin-bottom: 20px;
 }
 
 .formaPag select {
@@ -200,6 +202,34 @@ header {
     margin-top: 5px;
     margin-left: -5px;
     font-size: 20px;
+    padding: 5px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+
+.Dados {
+    width: 100%;
+}
+
+.Dados input {
+    font-size: 18px;
+    font-family: Helvetica;
+}
+
+.Dados input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.Dados select {
+    width: 100px;
+    border-radius: 20px;
+    border: none;
+    font-family: Helvetica;
+    margin-top: 5px;
+    margin-left: 0px;
+    font-size: 18px;
     padding: 5px;
     padding-top: 2px;
     padding-bottom: 2px;
