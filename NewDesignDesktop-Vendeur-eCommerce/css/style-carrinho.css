@@ -179,9 +179,28 @@ header {
 }
 
 .pagamento {
-    background-color: white;
+    background-color: #F6F6ED;
     width: 30%;
-    padding: 10px;
-    border-radius: 10px;
+    min-height: 500px;
+    padding: 5px;
+    padding-left: 20px;
+    border-radius: 20px;
     box-shadow: rgb(185, 185, 185) 0px 2px 10px;
+}
+
+.formaPag {
+    display: flex;
+    align-items: center;
+}
+
+.formaPag select {
+    width: 180px;
+    border-radius: 20px;
+    border: none;
+    margin-top: 5px;
+    margin-left: -5px;
+    font-size: 20px;
+    padding: 5px;
+    padding-top: 2px;
+    padding-bottom: 2px;
 }
