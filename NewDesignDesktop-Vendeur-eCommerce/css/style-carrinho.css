@@ -104,7 +104,7 @@ header {
 
 @media(min-width: 1360px) {
     .carrinho {
-        margin-top: 30px;
+        margin-top: 0px;
         margin-bottom: 30px;
         display: flex;
         padding: 10px;
@@ -142,7 +142,7 @@ header {
 .produtos {
     width: 100%;
     position: relative;
-    min-height: 500px;
+    height: 100%;
     padding-top: 10px;
     padding-left: 30px;
     padding-right: 30px;
@@ -200,7 +200,8 @@ header {
     justify-content: center;
     align-items: center;
     border-top: gray solid 1px;
-    position: absolute;
+    position: relative;
+    margin-left: 20px;
     bottom: 0;
 }
 
@@ -246,6 +247,7 @@ header {
 
 .Dados {
     width: 100%;
+    margin-top: -30px;
 }
 
 .Dados input {
