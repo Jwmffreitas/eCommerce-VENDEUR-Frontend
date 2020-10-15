@@ -3,6 +3,8 @@ Criando o Front-end do eCommerce da plataforma **VENDEUR**.
 
  - ## **NOVO DESIGN - MOBILE**
 ![](https://imgur.com/To8Idsl.jpg)
+ - ## **NOVO DESIGN - DESKTOP**
+![](https://imgur.com/lqp2SKI.jpg)
  - ## ANTIGO DESIGN - MOBILE
 ![](https://imgur.com/nG6Bnji.jpg) ![](https://imgur.com/vyQySy7.jpg)
 
