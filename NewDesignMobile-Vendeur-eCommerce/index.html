@@ -10,7 +10,7 @@
     <script src="https://kit.fontawesome.com/35cfca1e90.js" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
-<body onload="pesquisar()">   
+<body onload="pesquisar()" onselectstart="return false" oncontextmenu="return false" ondragstart="return false">   
     <header>
         <table width="100%" id="menu">
             <tr>
@@ -130,5 +130,36 @@
                 <input type="text" id="search"> <i class="fas fa-search" id="btn-srch" onclick="p(search.value)"></i>
             </div>
         </div>
+
+        <script>
+            if (document.addEventListener) {
+		document.addEventListener("keydown", bloquearSource);
+	} else { //Versões antigas do IE
+		document.attachEvent("onkeydown", bloquearSource);
+	}
+
+	function bloquearSource(e) {
+		e = e || window.event;
+
+		var code = e.which || e.keyCode;
+
+		if (code == 123){
+			e.returnValue=false;
+		}
+			
+		if (
+			e.ctrlKey &&
+			(code == 83 || code == 85 || code == 73 ) //83 = S, 85 = U 73= I 123 = F12
+		) {
+			if (e.preventDefault) {
+				e.preventDefault();
+			} else {
+				e.returnValue = false;
+			}
+
+			return false;
+		}
+	}
+        </script>
 </body>
 </html>
