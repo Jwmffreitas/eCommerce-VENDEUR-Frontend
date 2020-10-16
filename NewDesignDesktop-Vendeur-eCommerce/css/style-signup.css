@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    display: grid;
+    align-items: center;
+    background-image: linear-gradient(to bottom, #e9d7ad, #e9d7ad, #F3E9D3, white);
+    background-repeat: no-repeat;
+    height: 100vh;
+    /*background-image: linear-gradient(to bottom, #e9d7ad, white);*/
+}
+
+header {
+    padding-top: 10px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+header img {
+    width:60px;
+}
+
+@media(min-width: 370px) {
+    header img {
+        width: 70px;
+    }
+}
+
+@media(min-width: 400px) {
+    header img {
+        width: 80px;
+    }
+}
+
+.corpo {
+    display: grid;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 50px;
+}
+
+.cabeca {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+h2 {
+    margin-top: 5px;
+    margin-left: 0;
+    font-family: helvetica;
+}
+
+.formulario {
+    width: 800px;
+    box-shadow: gray 0px 0px 10px;
+    border-radius: 10px;
+    padding: 10px;
+    height: 100%;
+    margin-right: 10px;
+    margin-left: 10px;
+    background-color: white;
+    margin-top: 15px;
+}
+
+input {
+    margin-bottom: 5px;
+}
+
+.logar {
+    margin-top: 10px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+footer {
+    width: 100%;
+    text-align: center;
+    position: relative;
+    bottom: 0px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
